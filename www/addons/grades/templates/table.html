@@ -6,6 +6,7 @@
         <mm-loading hide-until="gradesLoaded">
             <div ng-if="gradesTable" class="card">
                 <table cellspacing="0" cellpadding="0" class="mma-grades-table">
+                    <label>Scroll down to see the course average</label>
                     <thead>
                         <th ng-repeat="column in gradesTable.columns track by $index" id="{{column.id}}" class="header" colspan="{{column.width}}">
                             {{column.name | translate}}
