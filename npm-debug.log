@@ -6,39 +6,39 @@
 1 verbose cli   '--save' ]
 2 info using npm@2.11.3
 3 info using node@v0.12.7
-4 verbose install initial load of c:\Users\akul\Documents\GitHub\moodlemobile2\package.json
-5 warn package.json moodlemobile2@1.0.0 No repository field.
-6 warn package.json moodlemobile2@1.0.0 No license field.
-7 verbose installManyTop reading scoped package data from c:\Users\akul\Documents\GitHub\moodlemobile2\node_modules\bower\package.json
-8 verbose installManyTop reading scoped package data from c:\Users\akul\Documents\GitHub\moodlemobile2\node_modules\gulp\package.json
-9 verbose installManyTop reading scoped package data from c:\Users\akul\Documents\GitHub\moodlemobile2\node_modules\gulp-clip-empty-files\package.json
-10 verbose installManyTop reading scoped package data from c:\Users\akul\Documents\GitHub\moodlemobile2\node_modules\gulp-concat\package.json
-11 verbose installManyTop reading scoped package data from c:\Users\akul\Documents\GitHub\moodlemobile2\node_modules\gulp-concat-util\package.json
-12 verbose installManyTop reading scoped package data from c:\Users\akul\Documents\GitHub\moodlemobile2\node_modules\gulp-insert\package.json
-13 verbose installManyTop reading scoped package data from c:\Users\akul\Documents\GitHub\moodlemobile2\node_modules\gulp-minify-css\package.json
-14 verbose installManyTop reading scoped package data from c:\Users\akul\Documents\GitHub\moodlemobile2\node_modules\gulp-ng-annotate\package.json
-15 verbose installManyTop reading scoped package data from c:\Users\akul\Documents\GitHub\moodlemobile2\node_modules\gulp-remove-empty-lines\package.json
-16 verbose installManyTop reading scoped package data from c:\Users\akul\Documents\GitHub\moodlemobile2\node_modules\gulp-rename\package.json
-17 verbose installManyTop reading scoped package data from c:\Users\akul\Documents\GitHub\moodlemobile2\node_modules\gulp-sass\package.json
-18 verbose installManyTop reading scoped package data from c:\Users\akul\Documents\GitHub\moodlemobile2\node_modules\gulp-slash\package.json
-19 verbose installManyTop reading scoped package data from c:\Users\akul\Documents\GitHub\moodlemobile2\node_modules\gulp-strip-comments\package.json
-20 verbose installManyTop reading scoped package data from c:\Users\akul\Documents\GitHub\moodlemobile2\node_modules\gulp-tap\package.json
-21 verbose installManyTop reading scoped package data from c:\Users\akul\Documents\GitHub\moodlemobile2\node_modules\gulp-util\package.json
-22 verbose installManyTop reading scoped package data from c:\Users\akul\Documents\GitHub\moodlemobile2\node_modules\jasmine\package.json
-23 verbose installManyTop reading scoped package data from c:\Users\akul\Documents\GitHub\moodlemobile2\node_modules\jasmine-core\package.json
-24 verbose installManyTop reading scoped package data from c:\Users\akul\Documents\GitHub\moodlemobile2\node_modules\karma\package.json
-25 verbose installManyTop reading scoped package data from c:\Users\akul\Documents\GitHub\moodlemobile2\node_modules\karma-chrome-launcher\package.json
-26 verbose installManyTop reading scoped package data from c:\Users\akul\Documents\GitHub\moodlemobile2\node_modules\karma-jasmine\package.json
-27 verbose installManyTop reading scoped package data from c:\Users\akul\Documents\GitHub\moodlemobile2\node_modules\plist\package.json
-28 verbose installManyTop reading scoped package data from c:\Users\akul\Documents\GitHub\moodlemobile2\node_modules\shelljs\package.json
-29 verbose installManyTop reading scoped package data from c:\Users\akul\Documents\GitHub\moodlemobile2\node_modules\through\package.json
+4 verbose install initial load of c:\Users\akul\Documents\GitHub\sparkmobile2\package.json
+5 warn package.json sparkmobile2@1.0.0 No repository field.
+6 warn package.json sparkmobile2@1.0.0 No license field.
+7 verbose installManyTop reading scoped package data from c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\bower\package.json
+8 verbose installManyTop reading scoped package data from c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\gulp\package.json
+9 verbose installManyTop reading scoped package data from c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\gulp-clip-empty-files\package.json
+10 verbose installManyTop reading scoped package data from c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\gulp-concat\package.json
+11 verbose installManyTop reading scoped package data from c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\gulp-concat-util\package.json
+12 verbose installManyTop reading scoped package data from c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\gulp-insert\package.json
+13 verbose installManyTop reading scoped package data from c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\gulp-minify-css\package.json
+14 verbose installManyTop reading scoped package data from c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\gulp-ng-annotate\package.json
+15 verbose installManyTop reading scoped package data from c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\gulp-remove-empty-lines\package.json
+16 verbose installManyTop reading scoped package data from c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\gulp-rename\package.json
+17 verbose installManyTop reading scoped package data from c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\gulp-sass\package.json
+18 verbose installManyTop reading scoped package data from c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\gulp-slash\package.json
+19 verbose installManyTop reading scoped package data from c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\gulp-strip-comments\package.json
+20 verbose installManyTop reading scoped package data from c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\gulp-tap\package.json
+21 verbose installManyTop reading scoped package data from c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\gulp-util\package.json
+22 verbose installManyTop reading scoped package data from c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\jasmine\package.json
+23 verbose installManyTop reading scoped package data from c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\jasmine-core\package.json
+24 verbose installManyTop reading scoped package data from c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\karma\package.json
+25 verbose installManyTop reading scoped package data from c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\karma-chrome-launcher\package.json
+26 verbose installManyTop reading scoped package data from c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\karma-jasmine\package.json
+27 verbose installManyTop reading scoped package data from c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\plist\package.json
+28 verbose installManyTop reading scoped package data from c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\shelljs\package.json
+29 verbose installManyTop reading scoped package data from c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\through\package.json
 30 info package.json plist@1.1.0 No license field.
 31 info package.json shelljs@0.3.0 license should be a valid SPDX license expression
 32 info package.json gulp-concat-util@0.5.4 No license field.
 33 info package.json gulp-minify-css@0.3.13 No license field.
 34 info package.json gulp-rename@1.2.2 No license field.
 35 info package.json gulp-util@2.2.20 No license field.
-36 verbose readDependencies loading dependencies from c:\Users\akul\Documents\GitHub\moodlemobile2\package.json
+36 verbose readDependencies loading dependencies from c:\Users\akul\Documents\GitHub\sparkmobile2\package.json
 37 silly cache add args [ 'pgb-config-maker', null ]
 38 verbose cache add spec pgb-config-maker
 39 silly cache add parsed spec { raw: 'pgb-config-maker',
@@ -143,18 +143,18 @@
 76 silly install resolved     maintainers: [ [Object] ],
 76 silly install resolved     directories: {},
 76 silly install resolved     _resolved: 'https://registry.npmjs.org/pgb-config-maker/-/pgb-config-maker-0.1.21.tgz' } ]
-77 info install pgb-config-maker@0.1.21 into c:\Users\akul\Documents\GitHub\moodlemobile2
+77 info install pgb-config-maker@0.1.21 into c:\Users\akul\Documents\GitHub\sparkmobile2
 78 info installOne pgb-config-maker@0.1.21
-79 verbose installOne of pgb-config-maker to c:\Users\akul\Documents\GitHub\moodlemobile2 not in flight; installing
-80 verbose lock using C:\Users\akul\AppData\Roaming\npm-cache\_locks\pgb-config-maker-e0ce879b07134392.lock for c:\Users\akul\Documents\GitHub\moodlemobile2\node_modules\pgb-config-maker
-81 silly install write writing pgb-config-maker 0.1.21 to c:\Users\akul\Documents\GitHub\moodlemobile2\node_modules\pgb-config-maker
+79 verbose installOne of pgb-config-maker to c:\Users\akul\Documents\GitHub\sparkmobile2 not in flight; installing
+80 verbose lock using C:\Users\akul\AppData\Roaming\npm-cache\_locks\pgb-config-maker-e0ce879b07134392.lock for c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\pgb-config-maker
+81 silly install write writing pgb-config-maker 0.1.21 to c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\pgb-config-maker
 82 verbose unbuild node_modules\pgb-config-maker
-83 silly gentlyRm c:\Users\akul\Documents\GitHub\moodlemobile2\node_modules\pgb-config-maker is being purged from base c:\Users\akul\Documents\GitHub\moodlemobile2
-84 verbose gentlyRm don't care about contents; nuking c:\Users\akul\Documents\GitHub\moodlemobile2\node_modules\pgb-config-maker
+83 silly gentlyRm c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\pgb-config-maker is being purged from base c:\Users\akul\Documents\GitHub\sparkmobile2
+84 verbose gentlyRm don't care about contents; nuking c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\pgb-config-maker
 85 verbose tar unpack C:\Users\akul\AppData\Roaming\npm-cache\pgb-config-maker\0.1.21\package.tgz
-86 verbose tar unpacking to c:\Users\akul\Documents\GitHub\moodlemobile2\node_modules\pgb-config-maker
-87 silly gentlyRm c:\Users\akul\Documents\GitHub\moodlemobile2\node_modules\pgb-config-maker is being purged
-88 verbose gentlyRm don't care about contents; nuking c:\Users\akul\Documents\GitHub\moodlemobile2\node_modules\pgb-config-maker
+86 verbose tar unpacking to c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\pgb-config-maker
+87 silly gentlyRm c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\pgb-config-maker is being purged
+88 verbose gentlyRm don't care about contents; nuking c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\pgb-config-maker
 89 silly gunzTarPerm modes [ '777', '666' ]
 90 silly gunzTarPerm extractEntry package.json
 91 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
@@ -180,11 +180,11 @@
 111 silly gunzTarPerm modified mode [ 'scripts/install.sh', 493, 511 ]
 112 silly gunzTarPerm extractEntry scripts/uninstall.sh
 113 silly gunzTarPerm modified mode [ 'scripts/uninstall.sh', 493, 511 ]
-114 verbose write writing to c:\Users\akul\Documents\GitHub\moodlemobile2\node_modules\pgb-config-maker\package.json
+114 verbose write writing to c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\pgb-config-maker\package.json
 115 info preinstall pgb-config-maker@0.1.21
-116 verbose readDependencies loading dependencies from c:\Users\akul\Documents\GitHub\moodlemobile2\node_modules\pgb-config-maker\package.json
+116 verbose readDependencies loading dependencies from c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\pgb-config-maker\package.json
 117 silly prepareForInstallMany adding mkdirp@^0.5.1 from pgb-config-maker dependencies
-118 verbose readDependencies loading dependencies from c:\Users\akul\Documents\GitHub\moodlemobile2\node_modules\pgb-config-maker\package.json
+118 verbose readDependencies loading dependencies from c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\pgb-config-maker\package.json
 119 silly cache add args [ 'mkdirp@^0.5.1', null ]
 120 verbose cache add spec mkdirp@^0.5.1
 121 silly cache add parsed spec { raw: 'mkdirp@^0.5.1',
@@ -278,18 +278,18 @@
 145 silly install resolved     _shasum: '30057438eac6cf7f8c4767f38648d6697d75c903',
 145 silly install resolved     _resolved: 'https://registry.npmjs.org/mkdirp/-/mkdirp-0.5.1.tgz',
 145 silly install resolved     _from: 'mkdirp@>=0.5.1 <0.6.0' } ]
-146 info install mkdirp@0.5.1 into c:\Users\akul\Documents\GitHub\moodlemobile2\node_modules\pgb-config-maker
+146 info install mkdirp@0.5.1 into c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\pgb-config-maker
 147 info installOne mkdirp@0.5.1
-148 verbose installOne of mkdirp to c:\Users\akul\Documents\GitHub\moodlemobile2\node_modules\pgb-config-maker not in flight; installing
-149 verbose lock using C:\Users\akul\AppData\Roaming\npm-cache\_locks\mkdirp-42ad4b7ac595a6ff.lock for c:\Users\akul\Documents\GitHub\moodlemobile2\node_modules\pgb-config-maker\node_modules\mkdirp
-150 silly install write writing mkdirp 0.5.1 to c:\Users\akul\Documents\GitHub\moodlemobile2\node_modules\pgb-config-maker\node_modules\mkdirp
+148 verbose installOne of mkdirp to c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\pgb-config-maker not in flight; installing
+149 verbose lock using C:\Users\akul\AppData\Roaming\npm-cache\_locks\mkdirp-42ad4b7ac595a6ff.lock for c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\pgb-config-maker\node_modules\mkdirp
+150 silly install write writing mkdirp 0.5.1 to c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\pgb-config-maker\node_modules\mkdirp
 151 verbose unbuild node_modules\pgb-config-maker\node_modules\mkdirp
-152 silly gentlyRm c:\Users\akul\Documents\GitHub\moodlemobile2\node_modules\pgb-config-maker\node_modules\mkdirp is being purged from base c:\Users\akul\Documents\GitHub\moodlemobile2
-153 verbose gentlyRm don't care about contents; nuking c:\Users\akul\Documents\GitHub\moodlemobile2\node_modules\pgb-config-maker\node_modules\mkdirp
+152 silly gentlyRm c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\pgb-config-maker\node_modules\mkdirp is being purged from base c:\Users\akul\Documents\GitHub\sparkmobile2
+153 verbose gentlyRm don't care about contents; nuking c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\pgb-config-maker\node_modules\mkdirp
 154 verbose tar unpack C:\Users\akul\AppData\Roaming\npm-cache\mkdirp\0.5.1\package.tgz
-155 verbose tar unpacking to c:\Users\akul\Documents\GitHub\moodlemobile2\node_modules\pgb-config-maker\node_modules\mkdirp
-156 silly gentlyRm c:\Users\akul\Documents\GitHub\moodlemobile2\node_modules\pgb-config-maker\node_modules\mkdirp is being purged
-157 verbose gentlyRm don't care about contents; nuking c:\Users\akul\Documents\GitHub\moodlemobile2\node_modules\pgb-config-maker\node_modules\mkdirp
+155 verbose tar unpacking to c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\pgb-config-maker\node_modules\mkdirp
+156 silly gentlyRm c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\pgb-config-maker\node_modules\mkdirp is being purged
+157 verbose gentlyRm don't care about contents; nuking c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\pgb-config-maker\node_modules\mkdirp
 158 silly gunzTarPerm modes [ '777', '666' ]
 159 silly gunzTarPerm extractEntry package.json
 160 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
@@ -337,11 +337,11 @@
 202 silly gunzTarPerm modified mode [ 'test/umask_sync.js', 420, 438 ]
 203 silly gunzTarPerm extractEntry test/race.js
 204 silly gunzTarPerm modified mode [ 'test/race.js', 420, 438 ]
-205 verbose write writing to c:\Users\akul\Documents\GitHub\moodlemobile2\node_modules\pgb-config-maker\node_modules\mkdirp\package.json
+205 verbose write writing to c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\pgb-config-maker\node_modules\mkdirp\package.json
 206 info preinstall mkdirp@0.5.1
-207 verbose readDependencies loading dependencies from c:\Users\akul\Documents\GitHub\moodlemobile2\node_modules\pgb-config-maker\node_modules\mkdirp\package.json
+207 verbose readDependencies loading dependencies from c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\pgb-config-maker\node_modules\mkdirp\package.json
 208 silly prepareForInstallMany adding minimist@0.0.8 from mkdirp dependencies
-209 verbose readDependencies loading dependencies from c:\Users\akul\Documents\GitHub\moodlemobile2\node_modules\pgb-config-maker\node_modules\mkdirp\package.json
+209 verbose readDependencies loading dependencies from c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\pgb-config-maker\node_modules\mkdirp\package.json
 210 silly cache add args [ 'minimist@0.0.8', null ]
 211 verbose cache add spec minimist@0.0.8
 212 silly cache add parsed spec { raw: 'minimist@0.0.8',
@@ -424,18 +424,18 @@
 244 silly install resolved     directories: {},
 244 silly install resolved     _shasum: '857fcabfc3397d2625b8228262e86aa7a011b05d',
 244 silly install resolved     _resolved: 'https://registry.npmjs.org/minimist/-/minimist-0.0.8.tgz' } ]
-245 info install minimist@0.0.8 into c:\Users\akul\Documents\GitHub\moodlemobile2\node_modules\pgb-config-maker\node_modules\mkdirp
+245 info install minimist@0.0.8 into c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\pgb-config-maker\node_modules\mkdirp
 246 info installOne minimist@0.0.8
-247 verbose installOne of minimist to c:\Users\akul\Documents\GitHub\moodlemobile2\node_modules\pgb-config-maker\node_modules\mkdirp not in flight; installing
-248 verbose lock using C:\Users\akul\AppData\Roaming\npm-cache\_locks\minimist-67029173391bcdb9.lock for c:\Users\akul\Documents\GitHub\moodlemobile2\node_modules\pgb-config-maker\node_modules\mkdirp\node_modules\minimist
-249 silly install write writing minimist 0.0.8 to c:\Users\akul\Documents\GitHub\moodlemobile2\node_modules\pgb-config-maker\node_modules\mkdirp\node_modules\minimist
+247 verbose installOne of minimist to c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\pgb-config-maker\node_modules\mkdirp not in flight; installing
+248 verbose lock using C:\Users\akul\AppData\Roaming\npm-cache\_locks\minimist-67029173391bcdb9.lock for c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\pgb-config-maker\node_modules\mkdirp\node_modules\minimist
+249 silly install write writing minimist 0.0.8 to c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\pgb-config-maker\node_modules\mkdirp\node_modules\minimist
 250 verbose unbuild node_modules\pgb-config-maker\node_modules\mkdirp\node_modules\minimist
-251 silly gentlyRm c:\Users\akul\Documents\GitHub\moodlemobile2\node_modules\pgb-config-maker\node_modules\mkdirp\node_modules\minimist is being purged from base c:\Users\akul\Documents\GitHub\moodlemobile2
-252 verbose gentlyRm don't care about contents; nuking c:\Users\akul\Documents\GitHub\moodlemobile2\node_modules\pgb-config-maker\node_modules\mkdirp\node_modules\minimist
+251 silly gentlyRm c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\pgb-config-maker\node_modules\mkdirp\node_modules\minimist is being purged from base c:\Users\akul\Documents\GitHub\sparkmobile2
+252 verbose gentlyRm don't care about contents; nuking c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\pgb-config-maker\node_modules\mkdirp\node_modules\minimist
 253 verbose tar unpack C:\Users\akul\AppData\Roaming\npm-cache\minimist\0.0.8\package.tgz
-254 verbose tar unpacking to c:\Users\akul\Documents\GitHub\moodlemobile2\node_modules\pgb-config-maker\node_modules\mkdirp\node_modules\minimist
-255 silly gentlyRm c:\Users\akul\Documents\GitHub\moodlemobile2\node_modules\pgb-config-maker\node_modules\mkdirp\node_modules\minimist is being purged
-256 verbose gentlyRm don't care about contents; nuking c:\Users\akul\Documents\GitHub\moodlemobile2\node_modules\pgb-config-maker\node_modules\mkdirp\node_modules\minimist
+254 verbose tar unpacking to c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\pgb-config-maker\node_modules\mkdirp\node_modules\minimist
+255 silly gentlyRm c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\pgb-config-maker\node_modules\mkdirp\node_modules\minimist is being purged
+256 verbose gentlyRm don't care about contents; nuking c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\pgb-config-maker\node_modules\mkdirp\node_modules\minimist
 257 silly gunzTarPerm modes [ '777', '666' ]
 258 silly gunzTarPerm extractEntry package.json
 259 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
@@ -465,39 +465,39 @@
 283 silly gunzTarPerm modified mode [ 'test/short.js', 420, 438 ]
 284 silly gunzTarPerm extractEntry test/whitespace.js
 285 silly gunzTarPerm modified mode [ 'test/whitespace.js', 420, 438 ]
-286 verbose write writing to c:\Users\akul\Documents\GitHub\moodlemobile2\node_modules\pgb-config-maker\node_modules\mkdirp\node_modules\minimist\package.json
+286 verbose write writing to c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\pgb-config-maker\node_modules\mkdirp\node_modules\minimist\package.json
 287 info preinstall minimist@0.0.8
-288 verbose readDependencies loading dependencies from c:\Users\akul\Documents\GitHub\moodlemobile2\node_modules\pgb-config-maker\node_modules\mkdirp\node_modules\minimist\package.json
-289 verbose readDependencies loading dependencies from c:\Users\akul\Documents\GitHub\moodlemobile2\node_modules\pgb-config-maker\node_modules\mkdirp\node_modules\minimist\package.json
+288 verbose readDependencies loading dependencies from c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\pgb-config-maker\node_modules\mkdirp\node_modules\minimist\package.json
+289 verbose readDependencies loading dependencies from c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\pgb-config-maker\node_modules\mkdirp\node_modules\minimist\package.json
 290 silly install resolved []
-291 verbose about to build c:\Users\akul\Documents\GitHub\moodlemobile2\node_modules\pgb-config-maker\node_modules\mkdirp\node_modules\minimist
-292 info build c:\Users\akul\Documents\GitHub\moodlemobile2\node_modules\pgb-config-maker\node_modules\mkdirp\node_modules\minimist
+291 verbose about to build c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\pgb-config-maker\node_modules\mkdirp\node_modules\minimist
+292 info build c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\pgb-config-maker\node_modules\mkdirp\node_modules\minimist
 293 info linkStuff minimist@0.0.8
-294 silly linkStuff minimist@0.0.8 has c:\Users\akul\Documents\GitHub\moodlemobile2\node_modules\pgb-config-maker\node_modules\mkdirp\node_modules as its parent node_modules
+294 silly linkStuff minimist@0.0.8 has c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\pgb-config-maker\node_modules\mkdirp\node_modules as its parent node_modules
 295 verbose linkBins minimist@0.0.8
 296 verbose linkMans minimist@0.0.8
 297 verbose rebuildBundles minimist@0.0.8
 298 info install minimist@0.0.8
 299 info postinstall minimist@0.0.8
-300 verbose unlock done using C:\Users\akul\AppData\Roaming\npm-cache\_locks\minimist-67029173391bcdb9.lock for c:\Users\akul\Documents\GitHub\moodlemobile2\node_modules\pgb-config-maker\node_modules\mkdirp\node_modules\minimist
-301 verbose about to build c:\Users\akul\Documents\GitHub\moodlemobile2\node_modules\pgb-config-maker\node_modules\mkdirp
-302 info build c:\Users\akul\Documents\GitHub\moodlemobile2\node_modules\pgb-config-maker\node_modules\mkdirp
+300 verbose unlock done using C:\Users\akul\AppData\Roaming\npm-cache\_locks\minimist-67029173391bcdb9.lock for c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\pgb-config-maker\node_modules\mkdirp\node_modules\minimist
+301 verbose about to build c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\pgb-config-maker\node_modules\mkdirp
+302 info build c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\pgb-config-maker\node_modules\mkdirp
 303 info linkStuff mkdirp@0.5.1
-304 silly linkStuff mkdirp@0.5.1 has c:\Users\akul\Documents\GitHub\moodlemobile2\node_modules\pgb-config-maker\node_modules as its parent node_modules
+304 silly linkStuff mkdirp@0.5.1 has c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\pgb-config-maker\node_modules as its parent node_modules
 305 verbose linkBins mkdirp@0.5.1
 306 verbose link bins [ { mkdirp: 'bin/cmd.js' },
-306 verbose link bins   'c:\\Users\\akul\\Documents\\GitHub\\moodlemobile2\\node_modules\\pgb-config-maker\\node_modules\\.bin',
+306 verbose link bins   'c:\\Users\\akul\\Documents\\GitHub\\sparkmobile2\\node_modules\\pgb-config-maker\\node_modules\\.bin',
 306 verbose link bins   false ]
 307 verbose linkMans mkdirp@0.5.1
 308 verbose rebuildBundles mkdirp@0.5.1
 309 verbose rebuildBundles [ 'minimist' ]
 310 info install mkdirp@0.5.1
 311 info postinstall mkdirp@0.5.1
-312 verbose unlock done using C:\Users\akul\AppData\Roaming\npm-cache\_locks\mkdirp-42ad4b7ac595a6ff.lock for c:\Users\akul\Documents\GitHub\moodlemobile2\node_modules\pgb-config-maker\node_modules\mkdirp
-313 verbose about to build c:\Users\akul\Documents\GitHub\moodlemobile2\node_modules\pgb-config-maker
-314 info build c:\Users\akul\Documents\GitHub\moodlemobile2\node_modules\pgb-config-maker
+312 verbose unlock done using C:\Users\akul\AppData\Roaming\npm-cache\_locks\mkdirp-42ad4b7ac595a6ff.lock for c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\pgb-config-maker\node_modules\mkdirp
+313 verbose about to build c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\pgb-config-maker
+314 info build c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\pgb-config-maker
 315 info linkStuff pgb-config-maker@0.1.21
-316 silly linkStuff pgb-config-maker@0.1.21 has c:\Users\akul\Documents\GitHub\moodlemobile2\node_modules as its parent node_modules
+316 silly linkStuff pgb-config-maker@0.1.21 has c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules as its parent node_modules
 317 verbose linkBins pgb-config-maker@0.1.21
 318 verbose linkMans pgb-config-maker@0.1.21
 319 verbose rebuildBundles pgb-config-maker@0.1.21
@@ -506,7 +506,7 @@
 322 info postinstall pgb-config-maker@0.1.21
 323 verbose unsafe-perm in lifecycle true
 324 info pgb-config-maker@0.1.21 Failed to exec postinstall script
-325 verbose unlock done using C:\Users\akul\AppData\Roaming\npm-cache\_locks\pgb-config-maker-e0ce879b07134392.lock for c:\Users\akul\Documents\GitHub\moodlemobile2\node_modules\pgb-config-maker
+325 verbose unlock done using C:\Users\akul\AppData\Roaming\npm-cache\_locks\pgb-config-maker-e0ce879b07134392.lock for c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\pgb-config-maker
 326 verbose stack Error: pgb-config-maker@0.1.21 postinstall: `scripts/install.sh`
 326 verbose stack Exit status 1
 326 verbose stack     at EventEmitter.<anonymous> (c:\Program Files\nodejs\node_modules\npm\lib\utils\lifecycle.js:213:16)
@@ -516,7 +516,7 @@
 326 verbose stack     at maybeClose (child_process.js:1015:16)
 326 verbose stack     at Process.ChildProcess._handle.onexit (child_process.js:1087:5)
 327 verbose pkgid pgb-config-maker@0.1.21
-328 verbose cwd c:\Users\akul\Documents\GitHub\moodlemobile2
+328 verbose cwd c:\Users\akul\Documents\GitHub\sparkmobile2
 329 error Windows_NT 6.3.9600
 330 error argv "c:\\Program Files\\nodejs\\node.exe" "c:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "pgb-config-maker" "--save"
 331 error node v0.12.7
@@ -540,9 +540,9 @@
 341 info pgb-config-maker@0.1.21 Failed to exec uninstall script
 342 warn continuing anyway pgb-config-maker@0.1.21 uninstall: `scripts/uninstall.sh`
 342 warn continuing anyway Exit status 1
-343 verbose unbuild rmStuff pgb-config-maker@0.1.21 from c:\Users\akul\Documents\GitHub\moodlemobile2\node_modules
+343 verbose unbuild rmStuff pgb-config-maker@0.1.21 from c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules
 344 info postuninstall pgb-config-maker@0.1.21
-345 silly gentlyRm c:\Users\akul\Documents\GitHub\moodlemobile2\node_modules\pgb-config-maker is being purged from base c:\Users\akul\Documents\GitHub\moodlemobile2
-346 verbose gentlyRm don't care about contents; nuking c:\Users\akul\Documents\GitHub\moodlemobile2\node_modules\pgb-config-maker
-347 silly vacuum-fs purging c:\Users\akul\Documents\GitHub\moodlemobile2\node_modules\pgb-config-maker
-348 silly vacuum-fs quitting because other entries in c:\Users\akul\Documents\GitHub\moodlemobile2\node_modules
+345 silly gentlyRm c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\pgb-config-maker is being purged from base c:\Users\akul\Documents\GitHub\sparkmobile2
+346 verbose gentlyRm don't care about contents; nuking c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\pgb-config-maker
+347 silly vacuum-fs purging c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\pgb-config-maker
+348 silly vacuum-fs quitting because other entries in c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules

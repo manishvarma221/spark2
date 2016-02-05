@@ -1,5 +1,5 @@
 {
-  "name": "moodlemobile2",
+  "name": "sparkmobile2",
   "app_id": "",
   "gulpStartupTasks": [
     "build",

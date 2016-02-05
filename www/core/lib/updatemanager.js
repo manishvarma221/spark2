@@ -103,7 +103,7 @@ angular.module('mm.core')
     }
 
     /**
-     * Migrate MoodleMobile 1 sites to MoodleMobile 2.
+     * Migrate SparkMobile 1 sites to SparkMobile 2.
      *
      * @return {Promise} Promise resolved when the sites are migrated.
      */
@@ -119,7 +119,7 @@ angular.module('mm.core')
                     return;
                 }
 
-                $log.debug('Migrating site from MoodleMobile 1: ' + siteid);
+                $log.debug('Migrating site from SparkMobile 1: ' + siteid);
                 var site = localStorage.getItem('sites-'+siteid),
                     infos;
 

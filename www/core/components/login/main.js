@@ -176,7 +176,7 @@ angular.module('mm.core.login', [])
 
     // Function to handle URL received by Custom URL Scheme. If it's a SSO login, perform authentication.
     function appLaunchedByURL(url) {
-        var ssoScheme = 'moodlemobile://token=';
+        var ssoScheme = 'sparkmobile://token=';
         if (url.indexOf(ssoScheme) == -1) {
             return false;
         }
