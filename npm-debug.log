@@ -1,0 +1,548 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'c:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'c:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'pgb-config-maker',
+1 verbose cli   '--save' ]
+2 info using npm@2.11.3
+3 info using node@v0.12.7
+4 verbose install initial load of c:\Users\akul\Documents\GitHub\sparkmobile2\package.json
+5 warn package.json sparkmobile2@1.0.0 No repository field.
+6 warn package.json sparkmobile2@1.0.0 No license field.
+7 verbose installManyTop reading scoped package data from c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\bower\package.json
+8 verbose installManyTop reading scoped package data from c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\gulp\package.json
+9 verbose installManyTop reading scoped package data from c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\gulp-clip-empty-files\package.json
+10 verbose installManyTop reading scoped package data from c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\gulp-concat\package.json
+11 verbose installManyTop reading scoped package data from c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\gulp-concat-util\package.json
+12 verbose installManyTop reading scoped package data from c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\gulp-insert\package.json
+13 verbose installManyTop reading scoped package data from c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\gulp-minify-css\package.json
+14 verbose installManyTop reading scoped package data from c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\gulp-ng-annotate\package.json
+15 verbose installManyTop reading scoped package data from c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\gulp-remove-empty-lines\package.json
+16 verbose installManyTop reading scoped package data from c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\gulp-rename\package.json
+17 verbose installManyTop reading scoped package data from c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\gulp-sass\package.json
+18 verbose installManyTop reading scoped package data from c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\gulp-slash\package.json
+19 verbose installManyTop reading scoped package data from c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\gulp-strip-comments\package.json
+20 verbose installManyTop reading scoped package data from c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\gulp-tap\package.json
+21 verbose installManyTop reading scoped package data from c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\gulp-util\package.json
+22 verbose installManyTop reading scoped package data from c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\jasmine\package.json
+23 verbose installManyTop reading scoped package data from c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\jasmine-core\package.json
+24 verbose installManyTop reading scoped package data from c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\karma\package.json
+25 verbose installManyTop reading scoped package data from c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\karma-chrome-launcher\package.json
+26 verbose installManyTop reading scoped package data from c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\karma-jasmine\package.json
+27 verbose installManyTop reading scoped package data from c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\plist\package.json
+28 verbose installManyTop reading scoped package data from c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\shelljs\package.json
+29 verbose installManyTop reading scoped package data from c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\through\package.json
+30 info package.json plist@1.1.0 No license field.
+31 info package.json shelljs@0.3.0 license should be a valid SPDX license expression
+32 info package.json gulp-concat-util@0.5.4 No license field.
+33 info package.json gulp-minify-css@0.3.13 No license field.
+34 info package.json gulp-rename@1.2.2 No license field.
+35 info package.json gulp-util@2.2.20 No license field.
+36 verbose readDependencies loading dependencies from c:\Users\akul\Documents\GitHub\sparkmobile2\package.json
+37 silly cache add args [ 'pgb-config-maker', null ]
+38 verbose cache add spec pgb-config-maker
+39 silly cache add parsed spec { raw: 'pgb-config-maker',
+39 silly cache add   scope: null,
+39 silly cache add   name: 'pgb-config-maker',
+39 silly cache add   rawSpec: '',
+39 silly cache add   spec: '*',
+39 silly cache add   type: 'range' }
+40 silly addNamed pgb-config-maker@*
+41 verbose addNamed "*" is a valid semver range for pgb-config-maker
+42 silly addNameRange { name: 'pgb-config-maker', range: '*', hasData: false }
+43 silly mapToRegistry name pgb-config-maker
+44 silly mapToRegistry using default registry
+45 silly mapToRegistry registry https://registry.npmjs.org/
+46 silly mapToRegistry uri https://registry.npmjs.org/pgb-config-maker
+47 verbose addNameRange registry:https://registry.npmjs.org/pgb-config-maker not in flight; fetching
+48 verbose request uri https://registry.npmjs.org/pgb-config-maker
+49 verbose request no auth needed
+50 info attempt registry request try #1 at 4:49:25 PM
+51 verbose request id fd9da21f0e17a7a7
+52 http request GET https://registry.npmjs.org/pgb-config-maker
+53 http 200 https://registry.npmjs.org/pgb-config-maker
+54 silly get cb [ 200,
+54 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+54 silly get     etag: '"N2G75DT7RFW6DZJZJLZWN3OE"',
+54 silly get     'content-type': 'application/json',
+54 silly get     'cache-control': 'max-age=60',
+54 silly get     'content-length': '20775',
+54 silly get     'accept-ranges': 'bytes',
+54 silly get     date: 'Tue, 24 Nov 2015 21:49:26 GMT',
+54 silly get     via: '1.1 varnish',
+54 silly get     age: '0',
+54 silly get     connection: 'keep-alive',
+54 silly get     'x-served-by': 'cache-jfk1030-JFK',
+54 silly get     'x-cache': 'MISS',
+54 silly get     'x-cache-hits': '0',
+54 silly get     'x-timer': 'S1448401765.898897,VS0,VE167',
+54 silly get     vary: 'Accept' } ]
+55 verbose get saving pgb-config-maker to C:\Users\akul\AppData\Roaming\npm-cache\registry.npmjs.org\pgb-config-maker\.cache.json
+56 silly addNameRange number 2 { name: 'pgb-config-maker', range: '*', hasData: true }
+57 silly addNameRange versions [ 'pgb-config-maker',
+57 silly addNameRange   [ '0.1.0',
+57 silly addNameRange     '0.1.1',
+57 silly addNameRange     '0.1.2',
+57 silly addNameRange     '0.1.3',
+57 silly addNameRange     '0.1.4',
+57 silly addNameRange     '0.1.5',
+57 silly addNameRange     '0.1.6',
+57 silly addNameRange     '0.1.7',
+57 silly addNameRange     '0.1.8',
+57 silly addNameRange     '0.1.9',
+57 silly addNameRange     '0.1.10',
+57 silly addNameRange     '0.1.11',
+57 silly addNameRange     '0.1.12',
+57 silly addNameRange     '0.1.13',
+57 silly addNameRange     '0.1.14',
+57 silly addNameRange     '0.1.15',
+57 silly addNameRange     '0.1.16',
+57 silly addNameRange     '0.1.17',
+57 silly addNameRange     '0.1.18',
+57 silly addNameRange     '0.1.19',
+57 silly addNameRange     '0.1.20',
+57 silly addNameRange     '0.1.21' ] ]
+58 silly addNamed pgb-config-maker@0.1.21
+59 verbose addNamed "0.1.21" is a plain semver version for pgb-config-maker
+60 silly mapToRegistry name pgb-config-maker
+61 silly mapToRegistry using default registry
+62 silly mapToRegistry registry https://registry.npmjs.org/
+63 silly mapToRegistry uri https://registry.npmjs.org/pgb-config-maker
+64 verbose addRemoteTarball https://registry.npmjs.org/pgb-config-maker/-/pgb-config-maker-0.1.21.tgz not in flight; adding
+65 verbose addRemoteTarball [ 'https://registry.npmjs.org/pgb-config-maker/-/pgb-config-maker-0.1.21.tgz',
+65 verbose addRemoteTarball   'aa99bc5d5eb6ade2de3ccf236692a8124b3ed311' ]
+66 info retry fetch attempt 1 at 4:49:25 PM
+67 info attempt registry request try #1 at 4:49:25 PM
+68 http fetch GET https://registry.npmjs.org/pgb-config-maker/-/pgb-config-maker-0.1.21.tgz
+69 http fetch 200 https://registry.npmjs.org/pgb-config-maker/-/pgb-config-maker-0.1.21.tgz
+70 silly fetchAndShaCheck shasum aa99bc5d5eb6ade2de3ccf236692a8124b3ed311
+71 verbose addTmpTarball C:\Users\akul\AppData\Local\Temp\npm-10376-03abe175\registry.npmjs.org\pgb-config-maker\-\pgb-config-maker-0.1.21.tgz not in flight; adding
+72 verbose addTmpTarball already have metadata; skipping unpack for pgb-config-maker@0.1.21
+73 silly cache afterAdd pgb-config-maker@0.1.21
+74 verbose afterAdd C:\Users\akul\AppData\Roaming\npm-cache\pgb-config-maker\0.1.21\package\package.json not in flight; writing
+75 verbose afterAdd C:\Users\akul\AppData\Roaming\npm-cache\pgb-config-maker\0.1.21\package\package.json written
+76 silly install resolved [ { name: 'pgb-config-maker',
+76 silly install resolved     author: { name: 'Siddiq Akbar' },
+76 silly install resolved     url: 'https://github.com/siddiq/pgb-config-maker/',
+76 silly install resolved     version: '0.1.21',
+76 silly install resolved     description: 'Automatically generates www/config.xml to be used by PhoneGap build using the existing Ionic\'s config.xml',
+76 silly install resolved     dependencies: { mkdirp: '^0.5.1' },
+76 silly install resolved     scripts:
+76 silly install resolved      { postinstall: 'scripts/install.sh',
+76 silly install resolved        uninstall: 'scripts/uninstall.sh' },
+76 silly install resolved     gitHead: 'a7ed2a94b68a60da7d36c755a92091c8e9c9095a',
+76 silly install resolved     _id: 'pgb-config-maker@0.1.21',
+76 silly install resolved     _shasum: 'aa99bc5d5eb6ade2de3ccf236692a8124b3ed311',
+76 silly install resolved     _from: 'pgb-config-maker@*',
+76 silly install resolved     _npmVersion: '3.3.6',
+76 silly install resolved     _nodeVersion: '5.0.0',
+76 silly install resolved     _npmUser: { name: 'siddiq', email: 'siddiq@gmail.com' },
+76 silly install resolved     dist:
+76 silly install resolved      { shasum: 'aa99bc5d5eb6ade2de3ccf236692a8124b3ed311',
+76 silly install resolved        tarball: 'http://registry.npmjs.org/pgb-config-maker/-/pgb-config-maker-0.1.21.tgz' },
+76 silly install resolved     maintainers: [ [Object] ],
+76 silly install resolved     directories: {},
+76 silly install resolved     _resolved: 'https://registry.npmjs.org/pgb-config-maker/-/pgb-config-maker-0.1.21.tgz' } ]
+77 info install pgb-config-maker@0.1.21 into c:\Users\akul\Documents\GitHub\sparkmobile2
+78 info installOne pgb-config-maker@0.1.21
+79 verbose installOne of pgb-config-maker to c:\Users\akul\Documents\GitHub\sparkmobile2 not in flight; installing
+80 verbose lock using C:\Users\akul\AppData\Roaming\npm-cache\_locks\pgb-config-maker-e0ce879b07134392.lock for c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\pgb-config-maker
+81 silly install write writing pgb-config-maker 0.1.21 to c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\pgb-config-maker
+82 verbose unbuild node_modules\pgb-config-maker
+83 silly gentlyRm c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\pgb-config-maker is being purged from base c:\Users\akul\Documents\GitHub\sparkmobile2
+84 verbose gentlyRm don't care about contents; nuking c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\pgb-config-maker
+85 verbose tar unpack C:\Users\akul\AppData\Roaming\npm-cache\pgb-config-maker\0.1.21\package.tgz
+86 verbose tar unpacking to c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\pgb-config-maker
+87 silly gentlyRm c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\pgb-config-maker is being purged
+88 verbose gentlyRm don't care about contents; nuking c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\pgb-config-maker
+89 silly gunzTarPerm modes [ '777', '666' ]
+90 silly gunzTarPerm extractEntry package.json
+91 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+92 silly gunzTarPerm extractEntry .npmignore
+93 silly gunzTarPerm modified mode [ '.npmignore', 420, 438 ]
+94 silly gunzTarPerm extractEntry README.md
+95 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+96 silly gunzTarPerm extractEntry LICENSE
+97 silly gunzTarPerm modified mode [ 'LICENSE', 420, 438 ]
+98 silly gunzTarPerm extractEntry make-config-xml.js
+99 silly gunzTarPerm modified mode [ 'make-config-xml.js', 493, 511 ]
+100 silly gunzTarPerm extractEntry batch.sh
+101 silly gunzTarPerm modified mode [ 'batch.sh', 493, 511 ]
+102 silly gunzTarPerm extractEntry doc/assets/pgb-config-maker.png
+103 silly gunzTarPerm modified mode [ 'doc/assets/pgb-config-maker.png', 420, 438 ]
+104 silly gunzTarPerm extractEntry doc/assets/pgb-config-maker.svg
+105 silly gunzTarPerm modified mode [ 'doc/assets/pgb-config-maker.svg', 420, 438 ]
+106 silly gunzTarPerm extractEntry phonegap-remote-build-android.sh
+107 silly gunzTarPerm modified mode [ 'phonegap-remote-build-android.sh', 493, 511 ]
+108 silly gunzTarPerm extractEntry phonegap-remote-build-ios.sh
+109 silly gunzTarPerm modified mode [ 'phonegap-remote-build-ios.sh', 493, 511 ]
+110 silly gunzTarPerm extractEntry scripts/install.sh
+111 silly gunzTarPerm modified mode [ 'scripts/install.sh', 493, 511 ]
+112 silly gunzTarPerm extractEntry scripts/uninstall.sh
+113 silly gunzTarPerm modified mode [ 'scripts/uninstall.sh', 493, 511 ]
+114 verbose write writing to c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\pgb-config-maker\package.json
+115 info preinstall pgb-config-maker@0.1.21
+116 verbose readDependencies loading dependencies from c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\pgb-config-maker\package.json
+117 silly prepareForInstallMany adding mkdirp@^0.5.1 from pgb-config-maker dependencies
+118 verbose readDependencies loading dependencies from c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\pgb-config-maker\package.json
+119 silly cache add args [ 'mkdirp@^0.5.1', null ]
+120 verbose cache add spec mkdirp@^0.5.1
+121 silly cache add parsed spec { raw: 'mkdirp@^0.5.1',
+121 silly cache add   scope: null,
+121 silly cache add   name: 'mkdirp',
+121 silly cache add   rawSpec: '^0.5.1',
+121 silly cache add   spec: '>=0.5.1 <0.6.0',
+121 silly cache add   type: 'range' }
+122 silly addNamed mkdirp@>=0.5.1 <0.6.0
+123 verbose addNamed ">=0.5.1 <0.6.0" is a valid semver range for mkdirp
+124 silly addNameRange { name: 'mkdirp', range: '>=0.5.1 <0.6.0', hasData: false }
+125 silly mapToRegistry name mkdirp
+126 silly mapToRegistry using default registry
+127 silly mapToRegistry registry https://registry.npmjs.org/
+128 silly mapToRegistry uri https://registry.npmjs.org/mkdirp
+129 verbose addNameRange registry:https://registry.npmjs.org/mkdirp not in flight; fetching
+130 verbose request uri https://registry.npmjs.org/mkdirp
+131 verbose request no auth needed
+132 info attempt registry request try #1 at 4:49:26 PM
+133 verbose etag "EJ3K3X6GO4II9LPQGFUO1SYP9"
+134 http request GET https://registry.npmjs.org/mkdirp
+135 http 200 https://registry.npmjs.org/mkdirp
+136 silly get cb [ 200,
+136 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+136 silly get     etag: '"EMWBWLTYM81M5FZLSD9VJ9J6D"',
+136 silly get     'content-type': 'application/json',
+136 silly get     'cache-control': 'max-age=60',
+136 silly get     'content-length': '23397',
+136 silly get     'accept-ranges': 'bytes',
+136 silly get     date: 'Tue, 24 Nov 2015 21:49:27 GMT',
+136 silly get     via: '1.1 varnish',
+136 silly get     age: '20',
+136 silly get     connection: 'keep-alive',
+136 silly get     'x-served-by': 'cache-jfk1025-JFK',
+136 silly get     'x-cache': 'HIT',
+136 silly get     'x-cache-hits': '387',
+136 silly get     'x-timer': 'S1448401767.062023,VS0,VE0',
+136 silly get     vary: 'Accept' } ]
+137 verbose get saving mkdirp to C:\Users\akul\AppData\Roaming\npm-cache\registry.npmjs.org\mkdirp\.cache.json
+138 silly addNameRange number 2 { name: 'mkdirp', range: '>=0.5.1 <0.6.0', hasData: true }
+139 silly addNameRange versions [ 'mkdirp',
+139 silly addNameRange   [ '0.0.1',
+139 silly addNameRange     '0.0.2',
+139 silly addNameRange     '0.0.3',
+139 silly addNameRange     '0.0.4',
+139 silly addNameRange     '0.0.5',
+139 silly addNameRange     '0.0.6',
+139 silly addNameRange     '0.0.7',
+139 silly addNameRange     '0.1.0',
+139 silly addNameRange     '0.2.0',
+139 silly addNameRange     '0.2.1',
+139 silly addNameRange     '0.2.2',
+139 silly addNameRange     '0.3.0',
+139 silly addNameRange     '0.3.1',
+139 silly addNameRange     '0.3.2',
+139 silly addNameRange     '0.3.3',
+139 silly addNameRange     '0.3.4',
+139 silly addNameRange     '0.3.5',
+139 silly addNameRange     '0.4.0',
+139 silly addNameRange     '0.4.1',
+139 silly addNameRange     '0.4.2',
+139 silly addNameRange     '0.5.0',
+139 silly addNameRange     '0.5.1' ] ]
+140 silly addNamed mkdirp@0.5.1
+141 verbose addNamed "0.5.1" is a plain semver version for mkdirp
+142 silly cache afterAdd mkdirp@0.5.1
+143 verbose afterAdd C:\Users\akul\AppData\Roaming\npm-cache\mkdirp\0.5.1\package\package.json not in flight; writing
+144 verbose afterAdd C:\Users\akul\AppData\Roaming\npm-cache\mkdirp\0.5.1\package\package.json written
+145 silly install resolved [ { name: 'mkdirp',
+145 silly install resolved     description: 'Recursively mkdir, like `mkdir -p`',
+145 silly install resolved     version: '0.5.1',
+145 silly install resolved     author:
+145 silly install resolved      { name: 'James Halliday',
+145 silly install resolved        email: 'mail@substack.net',
+145 silly install resolved        url: 'http://substack.net' },
+145 silly install resolved     main: 'index.js',
+145 silly install resolved     keywords: [ 'mkdir', 'directory' ],
+145 silly install resolved     repository:
+145 silly install resolved      { type: 'git',
+145 silly install resolved        url: 'git+https://github.com/substack/node-mkdirp.git' },
+145 silly install resolved     scripts: { test: 'tap test/*.js' },
+145 silly install resolved     dependencies: { minimist: '0.0.8' },
+145 silly install resolved     devDependencies: { tap: '1', 'mock-fs': '2 >=2.7.0' },
+145 silly install resolved     bin: { mkdirp: 'bin/cmd.js' },
+145 silly install resolved     license: 'MIT',
+145 silly install resolved     readme: '# mkdirp\n\nLike `mkdir -p`, but in node.js!\n\n[![build status](https://secure.travis-ci.org/substack/node-mkdirp.png)](http://travis-ci.org/substack/node-mkdirp)\n\n# example\n\n## pow.js\n\n```js\nvar mkdirp = require(\'mkdirp\');\n    \nmkdirp(\'/tmp/foo/bar/baz\', function (err) {\n    if (err) console.error(err)\n    else console.log(\'pow!\')\n});\n```\n\nOutput\n\n```\npow!\n```\n\nAnd now /tmp/foo/bar/baz exists, huzzah!\n\n# methods\n\n```js\nvar mkdirp = require(\'mkdirp\');\n```\n\n## mkdirp(dir, opts, cb)\n\nCreate a new directory and any necessary subdirectories at `dir` with octal\npermission string `opts.mode`. If `opts` is a non-object, it will be treated as\nthe `opts.mode`.\n\nIf `opts.mode` isn\'t specified, it defaults to `0777 & (~process.umask())`.\n\n`cb(err, made)` fires with the error or the first directory `made`\nthat had to be created, if any.\n\nYou can optionally pass in an alternate `fs` implementation by passing in\n`opts.fs`. Your implementation should have `opts.fs.mkdir(path, mode, cb)` and\n`opts.fs.stat(path, cb)`.\n\n## mkdirp.sync(dir, opts)\n\nSynchronously create a new directory and any necessary subdirectories at `dir`\nwith octal permission string `opts.mode`. If `opts` is a non-object, it will be\ntreated as the `opts.mode`.\n\nIf `opts.mode` isn\'t specified, it defaults to `0777 & (~process.umask())`.\n\nReturns the first directory that had to be created, if any.\n\nYou can optionally pass in an alternate `fs` implementation by passing in\n`opts.fs`. Your implementation should have `opts.fs.mkdirSync(path, mode)` and\n`opts.fs.statSync(path)`.\n\n# usage\n\nThis package also ships with a `mkdirp` command.\n\n```\nusage: mkdirp [DIR1,DIR2..] {OPTIONS}\n\n  Create each supplied directory including any necessary parent directories that\n  don\'t yet exist.\n  \n  If the directory already exists, do nothing.\n\nOPTIONS are:\n\n  -m, --mode   If a directory needs to be created, set the mode as an octal\n               permission string.\n\n```\n\n# install\n\nWith [npm](http://npmjs.org) do:\n\n```\nnpm install mkdirp\n```\n\nto get the library, or\n\n```\nnpm install -g mkdirp\n```\n\nto get the command.\n\n# license\n\nMIT\n',
+145 silly install resolved     readmeFilename: 'readme.markdown',
+145 silly install resolved     bugs: { url: 'https://github.com/substack/node-mkdirp/issues' },
+145 silly install resolved     homepage: 'https://github.com/substack/node-mkdirp#readme',
+145 silly install resolved     _id: 'mkdirp@0.5.1',
+145 silly install resolved     _shasum: '30057438eac6cf7f8c4767f38648d6697d75c903',
+145 silly install resolved     _resolved: 'https://registry.npmjs.org/mkdirp/-/mkdirp-0.5.1.tgz',
+145 silly install resolved     _from: 'mkdirp@>=0.5.1 <0.6.0' } ]
+146 info install mkdirp@0.5.1 into c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\pgb-config-maker
+147 info installOne mkdirp@0.5.1
+148 verbose installOne of mkdirp to c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\pgb-config-maker not in flight; installing
+149 verbose lock using C:\Users\akul\AppData\Roaming\npm-cache\_locks\mkdirp-42ad4b7ac595a6ff.lock for c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\pgb-config-maker\node_modules\mkdirp
+150 silly install write writing mkdirp 0.5.1 to c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\pgb-config-maker\node_modules\mkdirp
+151 verbose unbuild node_modules\pgb-config-maker\node_modules\mkdirp
+152 silly gentlyRm c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\pgb-config-maker\node_modules\mkdirp is being purged from base c:\Users\akul\Documents\GitHub\sparkmobile2
+153 verbose gentlyRm don't care about contents; nuking c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\pgb-config-maker\node_modules\mkdirp
+154 verbose tar unpack C:\Users\akul\AppData\Roaming\npm-cache\mkdirp\0.5.1\package.tgz
+155 verbose tar unpacking to c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\pgb-config-maker\node_modules\mkdirp
+156 silly gentlyRm c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\pgb-config-maker\node_modules\mkdirp is being purged
+157 verbose gentlyRm don't care about contents; nuking c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\pgb-config-maker\node_modules\mkdirp
+158 silly gunzTarPerm modes [ '777', '666' ]
+159 silly gunzTarPerm extractEntry package.json
+160 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+161 silly gunzTarPerm extractEntry LICENSE
+162 silly gunzTarPerm modified mode [ 'LICENSE', 420, 438 ]
+163 silly gunzTarPerm extractEntry index.js
+164 silly gunzTarPerm modified mode [ 'index.js', 420, 438 ]
+165 silly gunzTarPerm extractEntry .travis.yml
+166 silly gunzTarPerm modified mode [ '.travis.yml', 420, 438 ]
+167 silly gunzTarPerm extractEntry bin/cmd.js
+168 silly gunzTarPerm modified mode [ 'bin/cmd.js', 493, 511 ]
+169 silly gunzTarPerm extractEntry bin/usage.txt
+170 silly gunzTarPerm modified mode [ 'bin/usage.txt', 420, 438 ]
+171 silly gunzTarPerm extractEntry examples/pow.js
+172 silly gunzTarPerm modified mode [ 'examples/pow.js', 420, 438 ]
+173 silly gunzTarPerm extractEntry readme.markdown
+174 silly gunzTarPerm modified mode [ 'readme.markdown', 420, 438 ]
+175 silly gunzTarPerm extractEntry test/chmod.js
+176 silly gunzTarPerm modified mode [ 'test/chmod.js', 420, 438 ]
+177 silly gunzTarPerm extractEntry test/opts_fs_sync.js
+178 silly gunzTarPerm modified mode [ 'test/opts_fs_sync.js', 420, 438 ]
+179 silly gunzTarPerm extractEntry test/perm.js
+180 silly gunzTarPerm modified mode [ 'test/perm.js', 420, 438 ]
+181 silly gunzTarPerm extractEntry test/perm_sync.js
+182 silly gunzTarPerm modified mode [ 'test/perm_sync.js', 420, 438 ]
+183 silly gunzTarPerm extractEntry test/opts_fs.js
+184 silly gunzTarPerm modified mode [ 'test/opts_fs.js', 420, 438 ]
+185 silly gunzTarPerm extractEntry test/rel.js
+186 silly gunzTarPerm modified mode [ 'test/rel.js', 420, 438 ]
+187 silly gunzTarPerm extractEntry test/return.js
+188 silly gunzTarPerm modified mode [ 'test/return.js', 420, 438 ]
+189 silly gunzTarPerm extractEntry test/return_sync.js
+190 silly gunzTarPerm modified mode [ 'test/return_sync.js', 420, 438 ]
+191 silly gunzTarPerm extractEntry test/root.js
+192 silly gunzTarPerm modified mode [ 'test/root.js', 420, 438 ]
+193 silly gunzTarPerm extractEntry test/sync.js
+194 silly gunzTarPerm modified mode [ 'test/sync.js', 420, 438 ]
+195 silly gunzTarPerm extractEntry test/mkdirp.js
+196 silly gunzTarPerm modified mode [ 'test/mkdirp.js', 420, 438 ]
+197 silly gunzTarPerm extractEntry test/umask.js
+198 silly gunzTarPerm modified mode [ 'test/umask.js', 420, 438 ]
+199 silly gunzTarPerm extractEntry test/clobber.js
+200 silly gunzTarPerm modified mode [ 'test/clobber.js', 420, 438 ]
+201 silly gunzTarPerm extractEntry test/umask_sync.js
+202 silly gunzTarPerm modified mode [ 'test/umask_sync.js', 420, 438 ]
+203 silly gunzTarPerm extractEntry test/race.js
+204 silly gunzTarPerm modified mode [ 'test/race.js', 420, 438 ]
+205 verbose write writing to c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\pgb-config-maker\node_modules\mkdirp\package.json
+206 info preinstall mkdirp@0.5.1
+207 verbose readDependencies loading dependencies from c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\pgb-config-maker\node_modules\mkdirp\package.json
+208 silly prepareForInstallMany adding minimist@0.0.8 from mkdirp dependencies
+209 verbose readDependencies loading dependencies from c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\pgb-config-maker\node_modules\mkdirp\package.json
+210 silly cache add args [ 'minimist@0.0.8', null ]
+211 verbose cache add spec minimist@0.0.8
+212 silly cache add parsed spec { raw: 'minimist@0.0.8',
+212 silly cache add   scope: null,
+212 silly cache add   name: 'minimist',
+212 silly cache add   rawSpec: '0.0.8',
+212 silly cache add   spec: '0.0.8',
+212 silly cache add   type: 'version' }
+213 silly addNamed minimist@0.0.8
+214 verbose addNamed "0.0.8" is a plain semver version for minimist
+215 silly mapToRegistry name minimist
+216 silly mapToRegistry using default registry
+217 silly mapToRegistry registry https://registry.npmjs.org/
+218 silly mapToRegistry uri https://registry.npmjs.org/minimist
+219 verbose addNameVersion registry:https://registry.npmjs.org/minimist not in flight; fetching
+220 verbose request uri https://registry.npmjs.org/minimist
+221 verbose request no auth needed
+222 info attempt registry request try #1 at 4:49:27 PM
+223 verbose etag "5IOWSJZKCOFNN6AXX78UH07HO"
+224 http request GET https://registry.npmjs.org/minimist
+225 http 200 https://registry.npmjs.org/minimist
+226 silly get cb [ 200,
+226 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+226 silly get     etag: '"7FT12Y3AEFF5KL7PSH2UP2BOX"',
+226 silly get     'content-type': 'application/json',
+226 silly get     'cache-control': 'max-age=60',
+226 silly get     'content-length': '27280',
+226 silly get     'accept-ranges': 'bytes',
+226 silly get     date: 'Tue, 24 Nov 2015 21:49:27 GMT',
+226 silly get     via: '1.1 varnish',
+226 silly get     age: '57',
+226 silly get     connection: 'keep-alive',
+226 silly get     'x-served-by': 'cache-jfk1029-JFK',
+226 silly get     'x-cache': 'HIT',
+226 silly get     'x-cache-hits': '15',
+226 silly get     'x-timer': 'S1448401767.590813,VS0,VE0',
+226 silly get     vary: 'Accept' } ]
+227 verbose get saving minimist to C:\Users\akul\AppData\Roaming\npm-cache\registry.npmjs.org\minimist\.cache.json
+228 silly mapToRegistry name minimist
+229 silly mapToRegistry using default registry
+230 silly mapToRegistry registry https://registry.npmjs.org/
+231 silly mapToRegistry uri https://registry.npmjs.org/minimist
+232 verbose addRemoteTarball https://registry.npmjs.org/minimist/-/minimist-0.0.8.tgz not in flight; adding
+233 verbose addRemoteTarball [ 'https://registry.npmjs.org/minimist/-/minimist-0.0.8.tgz',
+233 verbose addRemoteTarball   '857fcabfc3397d2625b8228262e86aa7a011b05d' ]
+234 info retry fetch attempt 1 at 4:49:27 PM
+235 info attempt registry request try #1 at 4:49:27 PM
+236 http fetch GET https://registry.npmjs.org/minimist/-/minimist-0.0.8.tgz
+237 http fetch 200 https://registry.npmjs.org/minimist/-/minimist-0.0.8.tgz
+238 silly fetchAndShaCheck shasum 857fcabfc3397d2625b8228262e86aa7a011b05d
+239 verbose addTmpTarball C:\Users\akul\AppData\Local\Temp\npm-10376-03abe175\registry.npmjs.org\minimist\-\minimist-0.0.8.tgz not in flight; adding
+240 verbose addTmpTarball already have metadata; skipping unpack for minimist@0.0.8
+241 silly cache afterAdd minimist@0.0.8
+242 verbose afterAdd C:\Users\akul\AppData\Roaming\npm-cache\minimist\0.0.8\package\package.json not in flight; writing
+243 verbose afterAdd C:\Users\akul\AppData\Roaming\npm-cache\minimist\0.0.8\package\package.json written
+244 silly install resolved [ { name: 'minimist',
+244 silly install resolved     version: '0.0.8',
+244 silly install resolved     description: 'parse argument options',
+244 silly install resolved     main: 'index.js',
+244 silly install resolved     devDependencies: { tape: '~1.0.4', tap: '~0.4.0' },
+244 silly install resolved     scripts: { test: 'tap test/*.js' },
+244 silly install resolved     testling: { files: 'test/*.js', browsers: [Object] },
+244 silly install resolved     repository: { type: 'git', url: 'git://github.com/substack/minimist.git' },
+244 silly install resolved     homepage: 'https://github.com/substack/minimist',
+244 silly install resolved     keywords: [ 'argv', 'getopt', 'parser', 'optimist' ],
+244 silly install resolved     author:
+244 silly install resolved      { name: 'James Halliday',
+244 silly install resolved        email: 'mail@substack.net',
+244 silly install resolved        url: 'http://substack.net' },
+244 silly install resolved     license: 'MIT',
+244 silly install resolved     bugs: { url: 'https://github.com/substack/minimist/issues' },
+244 silly install resolved     _id: 'minimist@0.0.8',
+244 silly install resolved     dist:
+244 silly install resolved      { shasum: '857fcabfc3397d2625b8228262e86aa7a011b05d',
+244 silly install resolved        tarball: 'http://registry.npmjs.org/minimist/-/minimist-0.0.8.tgz' },
+244 silly install resolved     _from: 'minimist@0.0.8',
+244 silly install resolved     _npmVersion: '1.4.3',
+244 silly install resolved     _npmUser: { name: 'substack', email: 'mail@substack.net' },
+244 silly install resolved     maintainers: [ [Object] ],
+244 silly install resolved     directories: {},
+244 silly install resolved     _shasum: '857fcabfc3397d2625b8228262e86aa7a011b05d',
+244 silly install resolved     _resolved: 'https://registry.npmjs.org/minimist/-/minimist-0.0.8.tgz' } ]
+245 info install minimist@0.0.8 into c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\pgb-config-maker\node_modules\mkdirp
+246 info installOne minimist@0.0.8
+247 verbose installOne of minimist to c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\pgb-config-maker\node_modules\mkdirp not in flight; installing
+248 verbose lock using C:\Users\akul\AppData\Roaming\npm-cache\_locks\minimist-67029173391bcdb9.lock for c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\pgb-config-maker\node_modules\mkdirp\node_modules\minimist
+249 silly install write writing minimist 0.0.8 to c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\pgb-config-maker\node_modules\mkdirp\node_modules\minimist
+250 verbose unbuild node_modules\pgb-config-maker\node_modules\mkdirp\node_modules\minimist
+251 silly gentlyRm c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\pgb-config-maker\node_modules\mkdirp\node_modules\minimist is being purged from base c:\Users\akul\Documents\GitHub\sparkmobile2
+252 verbose gentlyRm don't care about contents; nuking c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\pgb-config-maker\node_modules\mkdirp\node_modules\minimist
+253 verbose tar unpack C:\Users\akul\AppData\Roaming\npm-cache\minimist\0.0.8\package.tgz
+254 verbose tar unpacking to c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\pgb-config-maker\node_modules\mkdirp\node_modules\minimist
+255 silly gentlyRm c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\pgb-config-maker\node_modules\mkdirp\node_modules\minimist is being purged
+256 verbose gentlyRm don't care about contents; nuking c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\pgb-config-maker\node_modules\mkdirp\node_modules\minimist
+257 silly gunzTarPerm modes [ '777', '666' ]
+258 silly gunzTarPerm extractEntry package.json
+259 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+260 silly gunzTarPerm extractEntry LICENSE
+261 silly gunzTarPerm modified mode [ 'LICENSE', 420, 438 ]
+262 silly gunzTarPerm extractEntry index.js
+263 silly gunzTarPerm modified mode [ 'index.js', 420, 438 ]
+264 silly gunzTarPerm extractEntry .travis.yml
+265 silly gunzTarPerm modified mode [ '.travis.yml', 420, 438 ]
+266 silly gunzTarPerm extractEntry example/parse.js
+267 silly gunzTarPerm modified mode [ 'example/parse.js', 420, 438 ]
+268 silly gunzTarPerm extractEntry readme.markdown
+269 silly gunzTarPerm modified mode [ 'readme.markdown', 420, 438 ]
+270 silly gunzTarPerm extractEntry test/dash.js
+271 silly gunzTarPerm modified mode [ 'test/dash.js', 420, 438 ]
+272 silly gunzTarPerm extractEntry test/default_bool.js
+273 silly gunzTarPerm modified mode [ 'test/default_bool.js', 420, 438 ]
+274 silly gunzTarPerm extractEntry test/dotted.js
+275 silly gunzTarPerm modified mode [ 'test/dotted.js', 420, 438 ]
+276 silly gunzTarPerm extractEntry test/long.js
+277 silly gunzTarPerm modified mode [ 'test/long.js', 420, 438 ]
+278 silly gunzTarPerm extractEntry test/parse.js
+279 silly gunzTarPerm modified mode [ 'test/parse.js', 420, 438 ]
+280 silly gunzTarPerm extractEntry test/parse_modified.js
+281 silly gunzTarPerm modified mode [ 'test/parse_modified.js', 420, 438 ]
+282 silly gunzTarPerm extractEntry test/short.js
+283 silly gunzTarPerm modified mode [ 'test/short.js', 420, 438 ]
+284 silly gunzTarPerm extractEntry test/whitespace.js
+285 silly gunzTarPerm modified mode [ 'test/whitespace.js', 420, 438 ]
+286 verbose write writing to c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\pgb-config-maker\node_modules\mkdirp\node_modules\minimist\package.json
+287 info preinstall minimist@0.0.8
+288 verbose readDependencies loading dependencies from c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\pgb-config-maker\node_modules\mkdirp\node_modules\minimist\package.json
+289 verbose readDependencies loading dependencies from c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\pgb-config-maker\node_modules\mkdirp\node_modules\minimist\package.json
+290 silly install resolved []
+291 verbose about to build c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\pgb-config-maker\node_modules\mkdirp\node_modules\minimist
+292 info build c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\pgb-config-maker\node_modules\mkdirp\node_modules\minimist
+293 info linkStuff minimist@0.0.8
+294 silly linkStuff minimist@0.0.8 has c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\pgb-config-maker\node_modules\mkdirp\node_modules as its parent node_modules
+295 verbose linkBins minimist@0.0.8
+296 verbose linkMans minimist@0.0.8
+297 verbose rebuildBundles minimist@0.0.8
+298 info install minimist@0.0.8
+299 info postinstall minimist@0.0.8
+300 verbose unlock done using C:\Users\akul\AppData\Roaming\npm-cache\_locks\minimist-67029173391bcdb9.lock for c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\pgb-config-maker\node_modules\mkdirp\node_modules\minimist
+301 verbose about to build c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\pgb-config-maker\node_modules\mkdirp
+302 info build c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\pgb-config-maker\node_modules\mkdirp
+303 info linkStuff mkdirp@0.5.1
+304 silly linkStuff mkdirp@0.5.1 has c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\pgb-config-maker\node_modules as its parent node_modules
+305 verbose linkBins mkdirp@0.5.1
+306 verbose link bins [ { mkdirp: 'bin/cmd.js' },
+306 verbose link bins   'c:\\Users\\akul\\Documents\\GitHub\\sparkmobile2\\node_modules\\pgb-config-maker\\node_modules\\.bin',
+306 verbose link bins   false ]
+307 verbose linkMans mkdirp@0.5.1
+308 verbose rebuildBundles mkdirp@0.5.1
+309 verbose rebuildBundles [ 'minimist' ]
+310 info install mkdirp@0.5.1
+311 info postinstall mkdirp@0.5.1
+312 verbose unlock done using C:\Users\akul\AppData\Roaming\npm-cache\_locks\mkdirp-42ad4b7ac595a6ff.lock for c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\pgb-config-maker\node_modules\mkdirp
+313 verbose about to build c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\pgb-config-maker
+314 info build c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\pgb-config-maker
+315 info linkStuff pgb-config-maker@0.1.21
+316 silly linkStuff pgb-config-maker@0.1.21 has c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules as its parent node_modules
+317 verbose linkBins pgb-config-maker@0.1.21
+318 verbose linkMans pgb-config-maker@0.1.21
+319 verbose rebuildBundles pgb-config-maker@0.1.21
+320 verbose rebuildBundles [ '.bin', 'mkdirp' ]
+321 info install pgb-config-maker@0.1.21
+322 info postinstall pgb-config-maker@0.1.21
+323 verbose unsafe-perm in lifecycle true
+324 info pgb-config-maker@0.1.21 Failed to exec postinstall script
+325 verbose unlock done using C:\Users\akul\AppData\Roaming\npm-cache\_locks\pgb-config-maker-e0ce879b07134392.lock for c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\pgb-config-maker
+326 verbose stack Error: pgb-config-maker@0.1.21 postinstall: `scripts/install.sh`
+326 verbose stack Exit status 1
+326 verbose stack     at EventEmitter.<anonymous> (c:\Program Files\nodejs\node_modules\npm\lib\utils\lifecycle.js:213:16)
+326 verbose stack     at EventEmitter.emit (events.js:110:17)
+326 verbose stack     at ChildProcess.<anonymous> (c:\Program Files\nodejs\node_modules\npm\lib\utils\spawn.js:24:14)
+326 verbose stack     at ChildProcess.emit (events.js:110:17)
+326 verbose stack     at maybeClose (child_process.js:1015:16)
+326 verbose stack     at Process.ChildProcess._handle.onexit (child_process.js:1087:5)
+327 verbose pkgid pgb-config-maker@0.1.21
+328 verbose cwd c:\Users\akul\Documents\GitHub\sparkmobile2
+329 error Windows_NT 6.3.9600
+330 error argv "c:\\Program Files\\nodejs\\node.exe" "c:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "pgb-config-maker" "--save"
+331 error node v0.12.7
+332 error npm  v2.11.3
+333 error code ELIFECYCLE
+334 error pgb-config-maker@0.1.21 postinstall: `scripts/install.sh`
+334 error Exit status 1
+335 error Failed at the pgb-config-maker@0.1.21 postinstall script 'scripts/install.sh'.
+335 error This is most likely a problem with the pgb-config-maker package,
+335 error not with npm itself.
+335 error Tell the author that this fails on your system:
+335 error     scripts/install.sh
+335 error You can get their info via:
+335 error     npm owner ls pgb-config-maker
+335 error There is likely additional logging output above.
+336 verbose exit [ 1, true ]
+337 verbose unbuild node_modules\pgb-config-maker
+338 info preuninstall pgb-config-maker@0.1.21
+339 info uninstall pgb-config-maker@0.1.21
+340 verbose unsafe-perm in lifecycle true
+341 info pgb-config-maker@0.1.21 Failed to exec uninstall script
+342 warn continuing anyway pgb-config-maker@0.1.21 uninstall: `scripts/uninstall.sh`
+342 warn continuing anyway Exit status 1
+343 verbose unbuild rmStuff pgb-config-maker@0.1.21 from c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules
+344 info postuninstall pgb-config-maker@0.1.21
+345 silly gentlyRm c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\pgb-config-maker is being purged from base c:\Users\akul\Documents\GitHub\sparkmobile2
+346 verbose gentlyRm don't care about contents; nuking c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\pgb-config-maker
+347 silly vacuum-fs purging c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules\pgb-config-maker
+348 silly vacuum-fs quitting because other entries in c:\Users\akul\Documents\GitHub\sparkmobile2\node_modules

@@ -40,10 +40,10 @@ angular.module('mm.core.login', [])
         url: '/sites',
         templateUrl: 'core/components/login/templates/sites.html',
         controller: 'mmLoginSitesCtrl',
-        onEnter: function($state, $mmSitesManager) {
+        onEnter: function($mmLoginHelper, $mmSitesManager) {
             // Skip this page if there are no sites yet.
             $mmSitesManager.hasNoSites().then(function() {
-                $state.go('mm_login.site');
+                $mmLoginHelper.goToAddSite();
             });
         }
     })
@@ -160,13 +160,14 @@ angular.module('mm.core.login', [])
                 if ($mmLoginHelper.isSSOLoginNeeded(result.code)) {
                     // SSO. User needs to authenticate in a browser.
                     $mmUtil.showConfirm($translate('mm.login.reconnectssodescription')).then(function() {
-                        $mmLoginHelper.openBrowserForSSOLogin(siteurl);
+                        $mmLoginHelper.openBrowserForSSOLogin(result.siteurl);
                     });
                 } else {
                     var info = $mmSite.getInfo();
                     if (typeof(info) !== 'undefined' && typeof(info.username) !== 'undefined') {
                         $ionicHistory.nextViewOptions({disableBack: true});
-                        $state.go('mm_login.reconnect', {siteurl: siteurl, username: info.username, infositeurl: info.siteurl});
+                        $state.go('mm_login.reconnect',
+                                        {siteurl: result.siteurl, username: info.username, infositeurl: info.siteurl});
                     }
                 }
             });
@@ -175,7 +176,7 @@ angular.module('mm.core.login', [])
 
     // Function to handle URL received by Custom URL Scheme. If it's a SSO login, perform authentication.
     function appLaunchedByURL(url) {
-        var ssoScheme = 'moodlemobile://token=';
+        var ssoScheme = 'sparkmobile://token=';
         if (url.indexOf(ssoScheme) == -1) {
             return false;
         }

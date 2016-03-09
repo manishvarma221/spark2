@@ -215,7 +215,7 @@ em {
 
 .mm-split-item-selected, .mm-split-item-selected .item {
   border-color: #ccc;
-  background-color: #D9D9D9;
+  background-color: #FF0000;
 }
 
 .item.item-text-wrap.item-completion { // Add .item and .item-text-wrap to give more priority to the rule, otherwise it's overridden by Ionic styles.

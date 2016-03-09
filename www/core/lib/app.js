@@ -36,7 +36,7 @@ angular.module('mm.core')
 .provider('$mmApp', function($stateProvider) {
 
     /** Define the app storage schema. */
-    var DBNAME = 'MoodleMobile',
+    var DBNAME = 'SparkMobile',
         dbschema = {
             stores: []
         },
@@ -236,6 +236,19 @@ angular.module('mm.core')
         self.isReady = function() {
             var promise = $injector.get('$mmInitDelegate').ready();
             return promise.$$state.status === 1;
+        };
+
+        /**
+         * Open the keyboard if plugin is available.
+         *
+         * @return {Boolean} True if plugin is available, false otherwise.
+         */
+        self.openKeyboard = function() {
+            if (typeof cordova != 'undefined' && cordova.plugins && cordova.plugins.Keyboard && cordova.plugins.Keyboard.show) {
+                cordova.plugins.Keyboard.show();
+                return true;
+            }
+            return false;
         };
 
         /**
