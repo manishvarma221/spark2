@@ -38,7 +38,7 @@ angular.module('mm.addons.academicsummary')
             }
 
             // Try to set courseid the notification belongs to.
-            var cid = academicsummary.summary.match(/course\/view\.php\?id=([^"]*)/);
+            var cid = academicsummary.match(/course\/view\.php\?id=([^"]*)/);
             if (cid && cid[1]) {
                 academicsummary.courseid = cid[1];
             }
