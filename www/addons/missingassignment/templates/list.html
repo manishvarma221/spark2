@@ -29,7 +29,7 @@
 
             </tr>
             <tr ng-if="missingassignment_detail.table_row.length==0">
-<td align="center" colspan="4">There is no missing assignment.</td> 
+                <td align="center" colspan="4">Congratulations! You do not have any missing assignments in this reporting period.</td> 
             </tr>  
             
          </table>
@@ -56,7 +56,7 @@
             </ion-infinite-scroll>
 
             <div class="padding" ng-if="!missingassignment || missingassignment.length <= 0">
-                <p>{{ 'mma.missingassignment.therearenoasummaryyet' | translate}}</p
+                <p>{{ 'mma.missingassignment.therearenoasummaryyet' | translate}}</p>
             </div>
         </mm-loading>
     </ion-content>

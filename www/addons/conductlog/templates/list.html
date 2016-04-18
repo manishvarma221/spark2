@@ -13,7 +13,7 @@
          <article></article>
          <div class="conductlog_assignment academic_summary" ng-repeat="conductlog_detail in conductlog track by $index">
          <table>
-            <tr>
+            <tr ng-if="conductlog_detail.table_row.length!=0">
                 <td>{{conductlog_detail.table_head[0]}}</td>
                 <td>{{conductlog_detail.table_head[1]}}</td>
                 <td>{{conductlog_detail.table_head[2]}}</td>
@@ -32,7 +32,9 @@
                 <td align="left">{{conductlog_row.teachername}}</td>
 
             </tr>
-            
+            <tr ng-if="conductlog_detail.table_row.length==0">
+                <td align="center" colspan="4">Congratulations! You don't have anything reported in your conduct log.</td> 
+            </tr>  
          </table>
             
          </div>
@@ -57,7 +59,7 @@
             </ion-infinite-scroll>
 
             <div class="padding" ng-if="!conductlog || conductlog.length <= 0">
-                <p>{{ 'mma.conductlog.therearenoasummaryyet' | translate}}</p
+                <p>{{ 'mma.conductlog.therearenoasummaryyet' | translate}}</p>
             </div>
         </mm-loading>
     </ion-content>

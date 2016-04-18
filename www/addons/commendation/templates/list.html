@@ -12,7 +12,7 @@
          <article></article>
          <div class="commendation_assignment academic_summary" ng-repeat="commendation_detail in commendation track by $index">
          <table>
-            <tr>
+            <tr ng-if="commendation_detail.table_row.length!=0">
                 <td>{{commendation_detail.table_head[0]}}</td>
                 <td>{{commendation_detail.table_head[1]}}</td>
                 <td>{{commendation_detail.table_head[2]}}</td>
@@ -28,7 +28,9 @@
                 <td align="left">{{commendation_row.teachername}}</td>
 
             </tr>
-            
+            <tr ng-if="commendation_detail.table_row.length==0">
+                <td align="center" colspan="4">You don't have any commendations.</td> 
+            </tr>  
          </table> 
 
           
@@ -69,7 +71,7 @@
             </ion-infinite-scroll>
 
             <div class="padding" ng-if="!conductlog || conductlog.length <= 0">
-                <p>{{ 'mma.conductlog.therearenoasummaryyet' | translate}}</p
+                <p>{{ 'mma.conductlog.therearenoasummaryyet' | translate}}</p>
             </div>
         </mm-loading>
     </ion-content>
