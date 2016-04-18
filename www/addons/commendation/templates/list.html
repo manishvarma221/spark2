@@ -1,0 +1,76 @@
+ 
+<ion-view view-title="Commendation">
+
+
+    <ion-content padding="true">
+        <ion-refresher pulling-text="{{ 'mm.core.pulltorefresh' | translate }}" ng-if="commendationLoaded" on-refresh="refreshCommendation()">
+        </ion-refresher>
+        <mm-loading hide-until="commendationLoaded">
+         
+        
+         <!-- {{summaryHTML}} -->
+         <article></article>
+         <div class="commendation_assignment academic_summary" ng-repeat="commendation_detail in commendation track by $index">
+         <table>
+            <tr>
+                <td>{{commendation_detail.table_head[0]}}</td>
+                <td>{{commendation_detail.table_head[1]}}</td>
+                <td>{{commendation_detail.table_head[2]}}</td>
+                <td>{{commendation_detail.table_head[3]}}</td>
+                <td>{{commendation_detail.table_head[4]}}</td>
+                 
+            </tr>
+            <tr ng-repeat="commendation_row in commendation_detail.table_row">
+                <td align="left">{{commendation_row.index}}</td>
+                <td align="left">{{commendation_row.date}}</td>
+                <td align="left">{{commendation_row.location_name}}</td>
+                <td align="left">{{commendation_row.comment}}</td>                 
+                <td align="left">{{commendation_row.teachername}}</td>
+
+            </tr>
+            
+         </table> 
+
+          
+         <div>
+         
+         <!-- <table ng-repeat="commendation_row in commendation_detail.table_row">
+                
+                <tr>
+                <td align="left" colspan="2">S.No.{{commendation_row.index}}</td>
+                </tr><tr>
+                <td>Date : </td> <td>{{commendation_row.date}}</td>
+                </tr><tr>
+                <td>Violation : </td><td>{{commendation_row.violation_type}}</td>
+                </tr><tr>
+                <td>Disruption : </td><td>{{commendation_row.disruption_type}}</td>
+                </tr><tr>
+                <td>Comment : </td><td>{{commendation_row.comment}}</td>
+                </tr><tr>
+                <td>Referred by : </td><td>{{commendation_row.teachername}}</td>
+
+
+            </tr>
+
+         </table> -->
+
+
+         </div>
+         
+
+            
+         </div>
+         </mm-loading>
+      
+
+            <ion-infinite-scroll ng-if="canLoadMore"
+                    immediate-check="false"
+                    on-infinite="loadMoreconductlog()" >
+            </ion-infinite-scroll>
+
+            <div class="padding" ng-if="!conductlog || conductlog.length <= 0">
+                <p>{{ 'mma.conductlog.therearenoasummaryyet' | translate}}</p
+            </div>
+        </mm-loading>
+    </ion-content>
+</ion-view>
