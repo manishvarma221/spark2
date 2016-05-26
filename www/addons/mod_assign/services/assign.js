@@ -48,9 +48,12 @@ angular.module('mm.addons.mod_assign')
         return $mmSite.read('mod_assign_get_assignments', params, preSets).then(function(response) {
             if (response.courses && response.courses.length) {
                 var assignments = response.courses[0].assignments;
+                var course_detail = response.courses[0];
                 for (var i = 0; i < assignments.length; i++) {
                     if (assignments[i].cmid == cmid) {
-                        return assignments[i];
+                        var assignment = assignments[i]; 
+                        assignment.course_name = course_detail.shortname; 
+                        return assignment;
                     }
                 }
                 return $q.reject();
