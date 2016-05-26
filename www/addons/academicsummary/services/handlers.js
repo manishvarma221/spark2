@@ -63,7 +63,7 @@ angular.module('mm.addons.academicsummary')
              * @name $mmaAcademicsummaryHandlers#sideMenuNav:controller
              */
             return function($scope) {
-                $scope.icon = 'ion-ios-list';
+                $scope.icon = 'ion-university';
                 $scope.title = 'mma.academicsummary.academicsummary';
                 $scope.state = 'site.academicsummary';
             };
