@@ -67,11 +67,11 @@
 
             <ion-infinite-scroll ng-if="canLoadMore"
                     immediate-check="false"
-                    on-infinite="loadMoreconductlog()" >
+                    on-infinite="loadMoreCommendation()" >
             </ion-infinite-scroll>
 
-            <div class="padding" ng-if="!conductlog || conductlog.length <= 0">
-                <p>{{ 'mma.conductlog.therearenoasummaryyet' | translate}}</p>
+            <div class="padding" ng-if="!commendation || commendation.length <= 0">
+                <p>{{ 'mma.commendation.therearenoasummaryyet' | translate}}</p>
             </div>
         </mm-loading>
     </ion-content>
