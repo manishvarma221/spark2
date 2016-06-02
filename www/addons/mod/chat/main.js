@@ -29,11 +29,7 @@ angular.module('mm.addons.mod_chat', [])
         views: {
             'site': {
                 controller: 'mmaModChatIndexCtrl',
-<<<<<<< HEAD
-                templateUrl: 'addons/mod_chat/templates/index.html'
-=======
                 templateUrl: 'addons/mod/chat/templates/index.html'
->>>>>>> v3.1.0
             }
         }
     })
@@ -48,23 +44,14 @@ angular.module('mm.addons.mod_chat', [])
         views: {
             'site': {
                 controller: 'mmaModChatChatCtrl',
-<<<<<<< HEAD
-                templateUrl: 'addons/mod_chat/templates/chat.html'
-=======
                 templateUrl: 'addons/mod/chat/templates/chat.html'
->>>>>>> v3.1.0
             }
         }
     });
 
 })
 
-<<<<<<< HEAD
-.config(function($mmCourseDelegateProvider) {
-    $mmCourseDelegateProvider.registerContentHandler('mmaModChat', 'chat', '$mmaModChatCourseContentHandler');
-=======
 .config(function($mmCourseDelegateProvider, $mmContentLinksDelegateProvider) {
     $mmCourseDelegateProvider.registerContentHandler('mmaModChat', 'chat', '$mmaModChatHandlers.courseContent');
     $mmContentLinksDelegateProvider.registerLinkHandler('mmaModChat', '$mmaModChatHandlers.linksHandler');
->>>>>>> v3.1.0
 });

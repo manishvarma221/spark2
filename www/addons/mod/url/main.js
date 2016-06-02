@@ -27,25 +27,16 @@ angular.module('mm.addons.mod_url', ['mm.core'])
       views: {
         'site': {
           controller: 'mmaModUrlIndexCtrl',
-<<<<<<< HEAD
-          templateUrl: 'addons/mod_url/templates/index.html'
-=======
           templateUrl: 'addons/mod/url/templates/index.html'
->>>>>>> v3.1.0
         }
       }
     });
 
 })
 
-<<<<<<< HEAD
-.config(function($mmCourseDelegateProvider) {
-    $mmCourseDelegateProvider.registerContentHandler('mmaModUrl', 'url', '$mmaModUrlCourseContentHandler');
-=======
 .config(function($mmCourseDelegateProvider, $mmContentLinksDelegateProvider) {
     $mmCourseDelegateProvider.registerContentHandler('mmaModUrl', 'url', '$mmaModUrlHandlers.courseContentHandler');
 
     // Register content links handler.
     $mmContentLinksDelegateProvider.registerLinkHandler('mmaModUrl', '$mmaModUrlHandlers.linksHandler');
->>>>>>> v3.1.0
 });

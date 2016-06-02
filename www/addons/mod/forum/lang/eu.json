@@ -4,14 +4,6 @@
     "cannotadddiscussionall": "Ez duzu baimenik partaide guztientzako eztabaida-gai berririk gehitzeko.",
     "cannotcreatediscussion": "Ezin da eztabaida sortu",
     "couldnotadd": "Ezin izan da zure mezua gehitu; errore bat gertatu da nonbait.",
-<<<<<<< HEAD
-    "erroremptymessage": "Mezua ezin da hutsik egon",
-    "erroremptysubject": "Mezuaren gaia ezin da hutsik egon",
-    "errorgetforum": "Errorea foroko datuak jasotzean.",
-    "forumnodiscussionsyet": "Oraindik ez dago elkarrizketarik foro honetan.",
-    "group": "Taldea",
-    "message": "Mezuren gurputza",
-=======
     "discussionsubscription": "Eztabaidaren harpidetza",
     "erroremptymessage": "Mezua ezin da hutsik egon",
     "erroremptysubject": "Mezuaren gaia ezin da hutsik egon",
@@ -20,15 +12,10 @@
     "forumnodiscussionsyet": "Oraindik ez dago elkarrizketarik foro honetan.",
     "group": "Taldea",
     "message": "Mezua",
->>>>>>> v3.1.0
     "numdiscussions": "{{numdiscussions}} elkarrizketa",
     "numreplies": "{{numreplies}} erantzun",
     "posttoforum": "Mezua forora bidali",
     "re": "Er:",
     "reply": "Erantzun",
-<<<<<<< HEAD
-    "subject": "Mezuaren gaia"
-=======
     "subject": "Gaia"
->>>>>>> v3.1.0
 }

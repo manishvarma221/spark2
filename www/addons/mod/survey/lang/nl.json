@@ -1,14 +1,5 @@
 {
     "cannotsubmitsurvey": "Sorry, er was een probleem bij het insturen van je onderzoek. Probeer opnieuw.",
-<<<<<<< HEAD
-    "clicktocontinue": "Klik hier om verder te gaan",
-    "errorgetsurvey": "Fout bij het ophalen van onderzoeksdata.",
-    "ifoundthat": "Ik vond dat",
-    "ipreferthat": "I verkies dat",
-    "responses": "Antwoorden",
-    "results": "Resultaten",
-    "surveycompletednograph": "Je hebt dit onderzoek voltooid."
-=======
     "clicktocontinue": "Klik hier om door te gaan",
     "errorgetsurvey": "Fout bij het ophalen van onderzoeksdata.",
     "ifoundthat": "Ik vond dat",
@@ -16,5 +7,4 @@
     "responses": "Antwoorden",
     "results": "Resultaten",
     "surveycompletednograph": "Je hebt dit onderzoek afgerond."
->>>>>>> v3.1.0
 }

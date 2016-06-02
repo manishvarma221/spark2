@@ -1,15 +1,9 @@
 <ion-view>
     <ion-nav-title><mm-format-text watch="true">{{ title }}</mm-format-text></ion-nav-title>
     <ion-nav-buttons side="secondary">
-<<<<<<< HEAD
-        <a class="button button-icon ion-ios-browsers-outline" ng-href="{{moduleurl}}" mm-browser ></a>
-    </ion-nav-buttons>
-    <ion-content>
-=======
         <a class="button button-icon ion-ios-browsers-outline" ng-href="{{moduleurl}}" mm-link ></a>
     </ion-nav-buttons>
     <ion-content mm-state-class>
->>>>>>> v3.1.0
         <ion-refresher pulling-text="{{ 'mm.core.pulltorefresh' | translate }}" ng-if="choiceLoaded" on-refresh="refreshChoice()"></ion-refresher>
         <mm-loading hide-until="choiceLoaded">
             <mm-course-mod-description description="description" watch="true"></mm-course-mod-description>
@@ -60,11 +54,7 @@
                     <p class="col">{{ result.numberofuser }}</p>
                     <p class="col">{{ 'mm.core.percentagenumber' | translate:{$a: result.percentageamount} }}</p>
                     <div class="col text-left">
-<<<<<<< HEAD
-                        <img ng-if="!choice.publish" class="mma-mod_choice-graph-horizontal" src="addons/mod_choice/img/row.png" alt="{{ 'mma.mod_choice.responsesresultgraphdescription' | translate:{number: result.percentageamount, text: result.text} }}" ng-style="{'width': result.percentageamount+'%'}">
-=======
                         <img ng-if="!choice.publish" class="mma-mod_choice-graph-horizontal" src="addons/mod/choice/img/row.png" alt="{{ 'mma.mod_choice.responsesresultgraphdescription' | translate:{number: result.percentageamount, text: result.text} }}" ng-style="{'width': result.percentageamount+'%'}">
->>>>>>> v3.1.0
                         <a ng-if="choice.publish" class="padding mma-mod_choice-user" ng-repeat="user in result.userresponses" mm-user-link courseid="{{courseid}}" userid="{{user.userid}}" title="{{user.fullname}}">
                             <img ng-src="{{user.profileimageurl}}" alt="{{user.fullname}}" mm-external-content>
                             <p>{{user.fullname}}</p>

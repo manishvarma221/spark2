@@ -32,23 +32,14 @@ angular.module('mm.addons.mod_choice', [])
         views: {
             'site': {
                 controller: 'mmaModChoiceIndexCtrl',
-<<<<<<< HEAD
-                templateUrl: 'addons/mod_choice/templates/index.html'
-=======
                 templateUrl: 'addons/mod/choice/templates/index.html'
->>>>>>> v3.1.0
             }
         }
     });
 
 })
 
-<<<<<<< HEAD
-.config(function($mmCourseDelegateProvider) {
-    $mmCourseDelegateProvider.registerContentHandler('mmaModChoice', 'choice', '$mmaModChoiceCourseContentHandler');
-=======
 .config(function($mmCourseDelegateProvider, $mmContentLinksDelegateProvider) {
     $mmCourseDelegateProvider.registerContentHandler('mmaModChoice', 'choice', '$mmaModChoiceHandlers.courseContent');
     $mmContentLinksDelegateProvider.registerLinkHandler('mmaModChoice', '$mmaModChoiceHandlers.linksHandler');
->>>>>>> v3.1.0
 });

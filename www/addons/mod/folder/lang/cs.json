@@ -1,8 +1,4 @@
 {
-<<<<<<< HEAD
-    "emptyfilelist": "Žádný soubor k zobrazení"
-=======
     "emptyfilelist": "Žádný soubor k zobrazení.",
     "errorwhilegettingfolder": "Chyba při načítání dat složky."
->>>>>>> v3.1.0
 }

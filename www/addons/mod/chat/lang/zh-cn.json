@@ -3,10 +3,7 @@
     "currentusers": "当前用户",
     "enterchat": "进入聊天室",
     "entermessage": "输入您的信息",
-<<<<<<< HEAD
-=======
     "errorwhilesendingmessage": "发送消息时发生错误，请稍后再试。",
->>>>>>> v3.1.0
     "messagebeepsyou": "{{$a}}刚刚呼叫您！",
     "messageenter": "{{$a}}刚刚进入聊天室",
     "messageexit": "{{$a}}已退出聊天室",

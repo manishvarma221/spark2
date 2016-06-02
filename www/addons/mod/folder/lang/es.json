@@ -1,8 +1,4 @@
 {
-<<<<<<< HEAD
-    "emptyfilelist": "No hay archivos que mostrar"
-=======
     "emptyfilelist": "No hay archivos que mostrar",
     "errorwhilegettingfolder": "Error recuperando los datos de la carpeta."
->>>>>>> v3.1.0
 }

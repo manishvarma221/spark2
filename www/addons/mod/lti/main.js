@@ -29,23 +29,14 @@ angular.module('mm.addons.mod_lti', [])
         views: {
             'site': {
                 controller: 'mmaModLtiIndexCtrl',
-<<<<<<< HEAD
-                templateUrl: 'addons/mod_lti/templates/index.html'
-=======
                 templateUrl: 'addons/mod/lti/templates/index.html'
->>>>>>> v3.1.0
             }
         }
     });
 
 })
 
-<<<<<<< HEAD
-.config(function($mmCourseDelegateProvider) {
-    $mmCourseDelegateProvider.registerContentHandler('mmaModLti', 'lti', '$mmaModLtiCourseContentHandler');
-=======
 .config(function($mmCourseDelegateProvider, $mmContentLinksDelegateProvider) {
     $mmCourseDelegateProvider.registerContentHandler('mmaModLti', 'lti', '$mmaModLtiHandlers.courseContent');
     $mmContentLinksDelegateProvider.registerLinkHandler('mmaModLti', '$mmaModLtiHandlers.linksHandler');
->>>>>>> v3.1.0
 });

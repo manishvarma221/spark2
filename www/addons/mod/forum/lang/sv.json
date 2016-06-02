@@ -4,14 +4,6 @@
     "cannotadddiscussionall": "Du har inte tillstånd att lägga till ett nytt diskussionsämne för alla deltagare. ",
     "cannotcreatediscussion": "Det gick inte att skapa en ny diskussion",
     "couldnotadd": "Det gick inte att lägga till Ditt inlägg på grund av okänt fel.",
-<<<<<<< HEAD
-    "erroremptymessage": "Meddelandet i inlägget kan inte vara tomt",
-    "erroremptysubject": "Ämnesrubriken för inlägget kan inte vara tom.",
-    "errorgetforum": "Fel att få forum innehåll",
-    "forumnodiscussionsyet": "Det finns inga diskussionsämnen ännu i detta forum.",
-    "group": "Grupp",
-    "message": "Meddelandets brödtext",
-=======
     "discussionsubscription": "Diskussions prenumeration",
     "erroremptymessage": "Meddelandet i inlägget kan inte vara tomt",
     "erroremptysubject": "Ämnesrubriken för inlägget kan inte vara tom.",
@@ -20,15 +12,10 @@
     "forumnodiscussionsyet": "Det finns inga diskussionsämnen ännu i detta forum.",
     "group": "Grupp",
     "message": "Meddelande",
->>>>>>> v3.1.0
     "numdiscussions": "{{numdiscussions}} diskussioner",
     "numreplies": "{{numreplies}} svar",
     "posttoforum": "Publicera inlägget i forumet",
     "re": "Svar:",
     "reply": "Svar",
-<<<<<<< HEAD
-    "subject": "Meddelanderubrik"
-=======
     "subject": "Ämne"
->>>>>>> v3.1.0
 }

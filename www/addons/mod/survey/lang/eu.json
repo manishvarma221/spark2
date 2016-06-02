@@ -1,11 +1,4 @@
 {
-<<<<<<< HEAD
-    "clicktocontinue": "Klik egin hemen jarraitzeko",
-    "ifoundthat": "Hau aurkitu dut",
-    "ipreferthat": "Nahiago dut",
-    "responses": "Erantzunak",
-    "results": "Emaitzak"
-=======
     "cannotsubmitsurvey": "Barkatu, baina arazo bat egon da zure hausnarketa bidaltzean. Mesedez saiatu berriz.",
     "clicktocontinue": "Klik egin hemen jarraitzeko",
     "errorgetsurvey": "Errorea hausnarketaren datuak eskuratzean.",
@@ -14,5 +7,4 @@
     "responses": "Erantzunak",
     "results": "Emaitzak",
     "surveycompletednograph": "Bete duzu hausnarketa hau"
->>>>>>> v3.1.0
 }

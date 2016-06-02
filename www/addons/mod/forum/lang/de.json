@@ -1,14 +1,5 @@
 {
     "addanewdiscussion": "Neues Thema hinzufügen",
-<<<<<<< HEAD
-    "cannotadddiscussion": "Um Themen hinzufügen zu können, müssen Sie Mitglied in einer Gruppe sein.",
-    "cannotadddiscussionall": "Sie haben keine Berechtigung, ein neues Thema für alle Teilnehmer/innen hinzuzufügen.",
-    "cannotcreatediscussion": "Das neue Thema konnte nicht hinzugefügt werden",
-    "couldnotadd": "Die Nachricht konnte aufgrund eines Fehlers nicht hinzugefügt werden",
-    "discussionsubscription": "Themenabonnement",
-    "erroremptymessage": "Der Nachrichtentext darf nicht leer sein.",
-    "erroremptysubject": "Der Nachrichtenbetreff darf nicht leer sein.",
-=======
     "cannotadddiscussion": "Nur Gruppenmitglieder dürfen Beiträge zum Forum hinzufügen.",
     "cannotadddiscussionall": "Sie dürfen kein neues Thema für alle Teilnehmer/innen hinzufügen.",
     "cannotcreatediscussion": "Das neue Thema wurde leider nicht gespeichert.",
@@ -16,22 +7,14 @@
     "discussionsubscription": "Themenabonnement",
     "erroremptymessage": "Die Mitteilung darf nicht leer sein.",
     "erroremptysubject": "Der Betreff darf nicht leer sein.",
->>>>>>> v3.1.0
     "errorgetforum": "Fehler beim Emfang der Forumsdaten",
     "errorgetgroups": "Fehler beim Lesen der Gruppenenstellungen",
     "forumnodiscussionsyet": "Keine Themen im Forum",
     "group": "Gruppe",
-<<<<<<< HEAD
-    "message": "Nachricht",
-    "numdiscussions": "{{numdiscussions}} Themen",
-    "numreplies": "{{numreplies}} Antworten",
-    "posttoforum": "Nachricht senden",
-=======
     "message": "Mitteilung",
     "numdiscussions": "{{numdiscussions}} Themen",
     "numreplies": "{{numreplies}} Antworten",
     "posttoforum": "Beitrag absenden",
->>>>>>> v3.1.0
     "re": "Re:",
     "reply": "Antworten",
     "subject": "Betreff"

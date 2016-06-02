@@ -29,25 +29,15 @@ angular.module('mm.addons.mod_page', ['mm.core'])
       views: {
         'site': {
           controller: 'mmaModPageIndexCtrl',
-<<<<<<< HEAD
-          templateUrl: 'addons/mod_page/templates/index.html'
-=======
           templateUrl: 'addons/mod/page/templates/index.html'
->>>>>>> v3.1.0
         }
       }
     });
 
 })
 
-<<<<<<< HEAD
-.config(function($mmCourseDelegateProvider, $mmCoursePrefetchDelegateProvider) {
-    $mmCourseDelegateProvider.registerContentHandler('mmaModPage', 'page', '$mmaModPageCourseContentHandler');
-    $mmCoursePrefetchDelegateProvider.registerPrefetchHandler('mmaModPage', 'page', '$mmaModPagePrefetchHandler');
-=======
 .config(function($mmCourseDelegateProvider, $mmCoursePrefetchDelegateProvider, $mmContentLinksDelegateProvider) {
     $mmCourseDelegateProvider.registerContentHandler('mmaModPage', 'page', '$mmaModPageHandlers.courseContent');
     $mmCoursePrefetchDelegateProvider.registerPrefetchHandler('mmaModPage', 'page', '$mmaModPagePrefetchHandler');
     $mmContentLinksDelegateProvider.registerLinkHandler('mmaModPage', '$mmaModPageHandlers.linksHandler');
->>>>>>> v3.1.0
 });

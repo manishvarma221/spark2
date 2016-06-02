@@ -31,25 +31,15 @@ angular.module('mm.addons.mod_folder', ['mm.core'])
       views: {
         'site': {
           controller: 'mmaModFolderIndexCtrl',
-<<<<<<< HEAD
-          templateUrl: 'addons/mod_folder/templates/index.html'
-=======
           templateUrl: 'addons/mod/folder/templates/index.html'
->>>>>>> v3.1.0
         }
       }
     });
 
 })
 
-<<<<<<< HEAD
-.config(function($mmCourseDelegateProvider, $mmCoursePrefetchDelegateProvider) {
-    $mmCourseDelegateProvider.registerContentHandler('mmaModFolder', 'folder', '$mmaModFolderCourseContentHandler');
-    $mmCoursePrefetchDelegateProvider.registerPrefetchHandler('mmaModFolder', 'folder', '$mmaModFolderPrefetchHandler');
-=======
 .config(function($mmCourseDelegateProvider, $mmCoursePrefetchDelegateProvider, $mmContentLinksDelegateProvider) {
     $mmCourseDelegateProvider.registerContentHandler('mmaModFolder', 'folder', '$mmaModFolderHandlers.courseContent');
     $mmCoursePrefetchDelegateProvider.registerPrefetchHandler('mmaModFolder', 'folder', '$mmaModFolderPrefetchHandler');
     $mmContentLinksDelegateProvider.registerLinkHandler('mmaModFolder', '$mmaModFolderHandlers.linksHandler');
->>>>>>> v3.1.0
 });

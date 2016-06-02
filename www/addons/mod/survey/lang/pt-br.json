@@ -1,11 +1,4 @@
 {
-<<<<<<< HEAD
-    "clicktocontinue": "Continuar",
-    "ifoundthat": "Freqüência atual",
-    "ipreferthat": "Freqüência desejada",
-    "responses": "Respostas",
-    "results": "Resultados"
-=======
     "cannotsubmitsurvey": "Desculpe, houve um problema enviar a sua pesquisa. Por favor, tente novamente.",
     "clicktocontinue": "Continuar",
     "errorgetsurvey": "Erro ao obter dados da pesquisa.",
@@ -14,5 +7,4 @@
     "responses": "Respostas",
     "results": "Resultados",
     "surveycompletednograph": "Você completou essa pesquisa."
->>>>>>> v3.1.0
 }

@@ -64,19 +64,12 @@ angular.module('mm.addons.mod_folder')
      * @module mm.addons.mod_folder
      * @ngdoc method
      * @name $mmaModFolderPrefetchHandler#prefetch
-<<<<<<< HEAD
-     * @param {Object} module The module object returned by WS.
-     * @return {Promise}      Promise resolved when all files have been downloaded. Data returned is not reliable.
-     */
-    self.prefetch = function(module) {
-=======
      * @param  {Object} module   The module object returned by WS.
      * @param  {Number} courseId Course ID the module belongs to.
      * @param  {Boolean} single  True if we're downloading a single module, false if we're downloading a whole section.
      * @return {Promise}         Promise resolved when all files have been downloaded. Data returned is not reliable.
      */
     self.prefetch = function(module, courseId, single) {
->>>>>>> v3.1.0
         return $mmaModFolder.prefetchContent(module);
     };
 

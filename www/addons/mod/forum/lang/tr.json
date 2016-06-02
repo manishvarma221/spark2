@@ -6,17 +6,9 @@
     "couldnotadd": "Bilinmeyen bir nedenle mesajınız eklenemedi",
     "forumnodiscussionsyet": "Bu forum da henuz hiç tartışma başlığı yok",
     "group": "Grup",
-<<<<<<< HEAD
-    "message": "Mesaj gövdesi",
-    "posttoforum": "Foruma gönder",
-    "re": "Ynt:",
-    "reply": "Yanıtla",
-    "subject": "Mesaj konusu"
-=======
     "message": "Mesaj",
     "posttoforum": "Foruma gönder",
     "re": "Ynt:",
     "reply": "Yanıtla",
     "subject": "Konu"
->>>>>>> v3.1.0
 }

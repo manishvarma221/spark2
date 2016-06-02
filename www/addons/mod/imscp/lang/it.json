@@ -1,8 +1,4 @@
 {
-<<<<<<< HEAD
-    "deploymenterror": "Si è verificato un errore nel content package!"
-=======
     "deploymenterror": "Si è verificato un errore nel content package!",
     "showmoduledescription": "Visualizza descrizione"
->>>>>>> v3.1.0
 }

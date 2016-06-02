@@ -1,8 +1,5 @@
 {
-<<<<<<< HEAD
-=======
     "cannotsubmit": "Wystąpił problem podczas zatwierdzania twojego wyboru. Proszę spróbuj ponownie.",
->>>>>>> v3.1.0
     "choiceoptions": "Opcje wyboru odpowiedzi",
     "expired": "Niestety ta aktywność została zamknięta {{$a}} i nie jest już dostępna.",
     "full": "(pełne)",

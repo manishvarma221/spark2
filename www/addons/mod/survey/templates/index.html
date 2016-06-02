@@ -1,15 +1,9 @@
 <ion-view>
     <ion-nav-title><mm-format-text watch="true">{{ title }}</mm-format-text></ion-nav-title>
     <ion-nav-buttons side="secondary">
-<<<<<<< HEAD
-        <a class="button button-icon ion-ios-browsers-outline" ng-href="{{moduleurl}}" mm-browser ></a>
-    </ion-nav-buttons>
-    <ion-content delegate-handle="mmaModSurveyScroll">
-=======
         <a class="button button-icon ion-ios-browsers-outline" ng-href="{{moduleurl}}" mm-link ></a>
     </ion-nav-buttons>
     <ion-content delegate-handle="mmaModSurveyScroll" mm-state-class>
->>>>>>> v3.1.0
         <ion-refresher pulling-text="{{ 'mm.core.pulltorefresh' | translate }}" ng-if="surveyLoaded" on-refresh="refreshSurvey()"></ion-refresher>
         <mm-loading hide-until="surveyLoaded">
             <mm-course-mod-description description="description" watch="true"></mm-course-mod-description>
@@ -17,11 +11,7 @@
             <!-- Survey already done -->
             <section class="card padding" ng-if="survey.surveydone">
                 <p class="padding">{{ 'mma.mod_survey.surveycompletednograph' | translate }}</p>
-<<<<<<< HEAD
-                <a class="button button-block" ng-href="{{moduleurl}}" mm-browser>{{ 'mma.mod_survey.results' | translate }}</a>
-=======
                 <a class="button button-block" ng-href="{{moduleurl}}" mm-link>{{ 'mma.mod_survey.results' | translate }}</a>
->>>>>>> v3.1.0
             </section>
 
             <!-- Survey questions -->

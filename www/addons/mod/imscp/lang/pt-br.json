@@ -1,8 +1,4 @@
 {
-<<<<<<< HEAD
-    "deploymenterror": "Erro de pacote de conteúdo!"
-=======
     "deploymenterror": "Erro de pacote de conteúdo!",
     "showmoduledescription": "Mostrar descrição"
->>>>>>> v3.1.0
 }

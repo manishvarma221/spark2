@@ -21,11 +21,7 @@ angular.module('mm.addons.mod_url')
  * @ngdoc service
  * @name $mmaModUrl
  */
-<<<<<<< HEAD
-.factory('$mmaModUrl', function($mmSite, $mmUtil, $q) {
-=======
 .factory('$mmaModUrl', function($mmSite, $mmUtil, $q, $mmContentLinksHelper) {
->>>>>>> v3.1.0
     var self = {};
 
     /**
@@ -56,9 +52,6 @@ angular.module('mm.addons.mod_url')
      * @param {String} url The URL to go to.
      */
     self.open = function(url) {
-<<<<<<< HEAD
-        $mmUtil.openInBrowser(url);
-=======
         var modal = $mmUtil.showModalLoading();
         $mmContentLinksHelper.handleLink(url).then(function(treated) {
             if (!treated) {
@@ -67,7 +60,6 @@ angular.module('mm.addons.mod_url')
         }).finally(function() {
             modal.dismiss();
         });
->>>>>>> v3.1.0
     };
 
     return self;

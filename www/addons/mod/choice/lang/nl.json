@@ -1,16 +1,4 @@
 {
-<<<<<<< HEAD
-    "cannotsubmit": "Sorry, er was een probleem bij het insturen van je keuze. Probeer opnieuw.",
-    "choiceoptions": "Keuze-opties",
-    "errorgetchoice": "Fout bij het ophalen van de keuzegegevens.",
-    "expired": "Sorry, de activiteit is gesloten op {{$a}} en is niet langer beschikbaar.",
-    "full": "(volledig)",
-    "noresultsviewable": "De resultaten zijn nu niet zichtbaar.",
-    "notopenyet": "Sorry, de activiteit is niet zichtbaar tot {{$a}}",
-    "numberofuser": "Aantal deelnemers",
-    "numberofuserinpercentage": "Deelnemerspercentage",
-    "previewonly": "Je kunt hier de beschikbare opties voor deze activiteit bekijken. Je kunt je keuze ingeven vanaf {{$a}}.",
-=======
     "cannotsubmit": "Er was een probleem bij het insturen van je keuze. Probeer opnieuw",
     "choiceoptions": "Keuze-opties",
     "errorgetchoice": "Fout bij het ophalen van de keuzegegevens.",
@@ -21,17 +9,11 @@
     "numberofuser": "Aantal deelnemers",
     "numberofuserinpercentage": "Percentage deelnemers",
     "previewonly": "Dit is slechts een voorbeeld van de beschikbare opties voor deze activiteit. Je zult je keuze niet kunnen maken voor {{$a}}.",
->>>>>>> v3.1.0
     "removemychoice": "Verwijder mijn keuze",
     "responses": "Antwoorden",
     "responsesresultgraphdescription": "{{number}}% van de gebruikers kozen optie: {{text}}.",
     "responsesresultgraphheader": "Grafiek tonen",
-<<<<<<< HEAD
-    "savemychoice": "Bewaar mijn keuze",
-    "userchoosethisoption": "Gebruikers die deze optie kozen",
-=======
     "savemychoice": "Bewaar mijn antwoord",
     "userchoosethisoption": "Gebruikers due deze optie kozen",
->>>>>>> v3.1.0
     "yourselection": "Jouw selectie"
 }

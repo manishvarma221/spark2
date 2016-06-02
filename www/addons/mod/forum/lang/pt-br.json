@@ -4,14 +4,6 @@
     "cannotadddiscussionall": "Você não tem permissão para abrir um novo tópico de discussão para todos os participantes.",
     "cannotcreatediscussion": "Não foi possível criar uma nova discussão",
     "couldnotadd": "Não foi possível publicar a sua mensagem. Infelizmente a causa do erro não foi identificada.",
-<<<<<<< HEAD
-    "erroremptymessage": "A mensagem não pode ser vazia.",
-    "erroremptysubject": "O assunto da mensagem não pode ser vazio",
-    "errorgetforum": "Erro ao buscar dados de fórum.",
-    "forumnodiscussionsyet": "Não existem tópicos neste fórum ainda",
-    "group": "Grupo",
-    "message": "Corpo da mensagem",
-=======
     "discussionsubscription": "Assinatura de discussão",
     "erroremptymessage": "A mensagem não pode ser vazia.",
     "erroremptysubject": "O assunto da mensagem não pode ser vazio",
@@ -20,15 +12,10 @@
     "forumnodiscussionsyet": "Não existem tópicos neste fórum ainda",
     "group": "Grupo",
     "message": "Mensagem",
->>>>>>> v3.1.0
     "numdiscussions": "{{numdiscussions}} discussões",
     "numreplies": "{{numreplies}} respostas",
     "posttoforum": "Enviar mensagem ao fórum",
     "re": "Re:",
     "reply": "Responder",
-<<<<<<< HEAD
-    "subject": "Assunto da mensagem"
-=======
     "subject": "Assunto"
->>>>>>> v3.1.0
 }

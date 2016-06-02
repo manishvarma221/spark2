@@ -49,11 +49,7 @@ angular.module('mm.addons.mod_forum')
             postadded: '&?',
             defaultsubject: '=?'
         },
-<<<<<<< HEAD
-        templateUrl: 'addons/mod_forum/templates/discussionpost.html',
-=======
         templateUrl: 'addons/mod/forum/templates/discussionpost.html',
->>>>>>> v3.1.0
         transclude: true,
         link: function(scope) {
             scope.isReplyEnabled = $mmaModForum.isReplyPostEnabled();

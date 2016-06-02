@@ -20,21 +20,14 @@ angular.module('mm.addons.mod_resource')
  * @module mm.addons.mod_resource
  * @ngdoc directive
  * @name mmaModResourceHtmlLink
-<<<<<<< HEAD
-=======
  *
  * @deprecated since version 2.10
  * This function was used to show resources inline
->>>>>>> v3.1.0
  */
 .directive('mmaModResourceHtmlLink', function() {
     return {
         restrict: 'A',
-<<<<<<< HEAD
-        priority: 99,   // Must be lower than mm-browser, or anything listening for a click event.
-=======
         priority: 99,   // Must be lower than mm-link, or anything listening for a click event.
->>>>>>> v3.1.0
         link: function(scope, element, attrs) {
             element.on('click', function(event) {
                 var href = element[0].getAttribute('data-href');

@@ -21,12 +21,6 @@ angular.module('mm.addons.mod_forum')
  * @ngdoc controller
  * @name $mmaModForum
  */
-<<<<<<< HEAD
-.factory('$mmaModForum', function($q, $mmSite, $mmUser, $mmGroups, $translate, mmaModForumDiscPerPage) {
-    var self = {};
-
-    /**
-=======
 .factory('$mmaModForum', function($q, $mmSite, $mmUser, $mmGroups, $translate, $mmSitesManager, mmaModForumDiscPerPage) {
     var self = {};
 
@@ -52,7 +46,6 @@ angular.module('mm.addons.mod_forum')
     }
 
     /**
->>>>>>> v3.1.0
      * Get cache key for forum data WS calls.
      *
      * @param {Number} courseid Course ID.
@@ -121,8 +114,6 @@ angular.module('mm.addons.mod_forum')
     };
 
     /**
-<<<<<<< HEAD
-=======
      * Check if a user can post to a certain group.
      *
      * @module mm.addons.mod_forum
@@ -163,7 +154,6 @@ angular.module('mm.addons.mod_forum')
     };
 
     /**
->>>>>>> v3.1.0
      * Extract the starting post of a discussion from a list of posts. The post is removed from the array passed as a parameter.
      *
      * @module mm.addons.mod_forum
@@ -192,9 +182,6 @@ angular.module('mm.addons.mod_forum')
     };
 
     /**
-<<<<<<< HEAD
-     * Return whether or not the plugin is enabled. Plugin is enabled if the forum WS are available.
-=======
      * Check if canAddDiscussion is available.
      *
      * @module mm.addons.mod_forum
@@ -208,19 +195,10 @@ angular.module('mm.addons.mod_forum')
 
     /**
      * Return whether or not the plugin is enabled in a certain site. Plugin is enabled if the forum WS are available.
->>>>>>> v3.1.0
      *
      * @module mm.addons.mod_forum
      * @ngdoc method
      * @name $mmaModForum#isPluginEnabled
-<<<<<<< HEAD
-     * @return {Boolean} True if plugin is enabled, false otherwise.
-     */
-    self.isPluginEnabled = function() {
-        return  $mmSite.wsAvailable('mod_forum_get_forums_by_courses') &&
-                $mmSite.wsAvailable('mod_forum_get_forum_discussions_paginated') &&
-                $mmSite.wsAvailable('mod_forum_get_forum_discussion_posts');
-=======
      * @param  {String} [siteId] Site ID. If not defined, current site.
      * @return {Promise}         Promise resolved with true if plugin is enabled, rejected or resolved with false otherwise.
      */
@@ -232,7 +210,6 @@ angular.module('mm.addons.mod_forum')
                     site.wsAvailable('mod_forum_get_forum_discussions_paginated') &&
                     site.wsAvailable('mod_forum_get_forum_discussion_posts');
         });
->>>>>>> v3.1.0
     };
 
     /**
@@ -365,8 +342,6 @@ angular.module('mm.addons.mod_forum')
     };
 
     /**
-<<<<<<< HEAD
-=======
      * Invalidates can add discussion WS calls.
      *
      * @module mm.addons.mod_forum
@@ -380,7 +355,6 @@ angular.module('mm.addons.mod_forum')
     };
 
     /**
->>>>>>> v3.1.0
      * Invalidates forum discussion posts.
      *
      * @module mm.addons.mod_forum

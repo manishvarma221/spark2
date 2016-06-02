@@ -24,11 +24,7 @@ angular.module('mm.addons.mod_forum')
 .controller('mmaModForumNewDiscussionCtrl', function($scope, $stateParams, $mmGroups, $q, $mmaModForum, $mmEvents, $ionicPlatform,
             $mmUtil, $ionicHistory, $translate, mmaModForumNewDiscussionEvent) {
 
-<<<<<<< HEAD
-    var courseid = $stateParams.courseid,
-=======
     var courseid = $stateParams.cid,
->>>>>>> v3.1.0
         forumid = $stateParams.forumid,
         cmid = $stateParams.cmid;
 
@@ -45,20 +41,8 @@ angular.module('mm.addons.mod_forum')
                 return $mmGroups.getActivityAllowedGroups(cmid).then(function(forumgroups) {
                     var promise;
                     if (mode === $mmGroups.VISIBLEGROUPS) {
-<<<<<<< HEAD
-                        // We need to check which of the returned groups the user belongs to.
-                        promise = $mmGroups.getUserGroupsInCourse(courseid, refresh).then(function(usergroups) {
-                            if (usergroups.length === 0) {
-                                // User doesn't belong to any group, probably a teacher. Let's return all groups,
-                                // if the user can't post to some of them it will be filtered by add discussion WS.
-                                return forumgroups;
-                            }
-                            return filterGroups(forumgroups, usergroups);
-                        });
-=======
                         // We need to check which of the returned groups the user can post to.
                         promise = validateVisibleGroups(forumgroups, refresh);
->>>>>>> v3.1.0
                     } else {
                         // WS already filters groups, no need to do it ourselves.
                         promise = $q.when(forumgroups);
@@ -92,8 +76,6 @@ angular.module('mm.addons.mod_forum')
         });
     }
 
-<<<<<<< HEAD
-=======
     // Validate which of the groups returned by getActivityAllowedGroups in visible groups should be shown to post to.
     function validateVisibleGroups(forumgroups, refresh) {
         if ($mmaModForum.isCanAddDiscussionAvailable()) {
@@ -142,7 +124,6 @@ angular.module('mm.addons.mod_forum')
         }
     }
 
->>>>>>> v3.1.0
     // Filter forumgroups, returning only those that are inside usergroups.
     function filterGroups(forumgroups, usergroups) {
         var filtered = [],
@@ -166,12 +147,8 @@ angular.module('mm.addons.mod_forum')
     // Pull to refresh.
     $scope.refreshGroups = function() {
         var p1 = $mmGroups.invalidateActivityGroupMode(cmid),
-<<<<<<< HEAD
-            p2 = $mmGroups.invalidateActivityAllowedGroups(cmid);
-=======
             p2 = $mmGroups.invalidateActivityAllowedGroups(cmid),
             p3 = $mmaModForum.invalidateCanAddDiscussion(forumid);
->>>>>>> v3.1.0
 
         $q.all([p1, p2]).finally(function() {
             fetchGroups(true).finally(function() {

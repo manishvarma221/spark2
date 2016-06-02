@@ -1,11 +1,4 @@
 {
-<<<<<<< HEAD
-    "clicktocontinue": "Stiskněte pro pokračování",
-    "ifoundthat": "Zjistil jsem, že",
-    "ipreferthat": "Představoval bych si, že",
-    "responses": "Odpovědi",
-    "results": "Výsledky"
-=======
     "cannotsubmitsurvey": "Je nám líto, došlo k chybě odeslání průzkumu. Prosím zkuste to znovu.",
     "clicktocontinue": "Stiskněte pro pokračování",
     "errorgetsurvey": "Chyba při načítání dat průzkumu.",
@@ -14,5 +7,4 @@
     "responses": "Odpovědi",
     "results": "Výsledky",
     "surveycompletednograph": "Tento dotazník jste již vyplnili."
->>>>>>> v3.1.0
 }
