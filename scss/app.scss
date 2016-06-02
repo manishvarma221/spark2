@@ -6,11 +6,10 @@
 
 // Colors.
 $positive: #387ef5;
-$light: #fff;
 
 // Setting the default button to button-outline.
-$button-default-bg: $positive;
-$button-default-text: $light;
+$button-default-bg: transparent;
+$button-default-text: $positive;
 $button-default-border: $positive;
 $button-default-active-bg: $positive;
 $button-default-active-border: $positive;
