@@ -1,3 +1,8 @@
 {
+<<<<<<< HEAD
     "emptyfilelist": "Ez dago fitxategirik erakusteko."
+=======
+    "emptyfilelist": "Ez dago fitxategirik erakusteko.",
+    "errorwhilegettingfolder": "Errorea karpetaren datuak eskuratzean."
+>>>>>>> v3.1.0
 }

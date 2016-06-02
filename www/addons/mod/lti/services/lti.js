@@ -21,7 +21,11 @@ angular.module('mm.addons.mod_lti')
  * @ngdoc service
  * @name $mmaModLti
  */
+<<<<<<< HEAD
 .factory('$mmaModLti', function($q, $mmSite, $mmFS, $mmText, $mmUtil, $mmLang) {
+=======
+.factory('$mmaModLti', function($q, $mmSite, $mmFS, $mmText, $mmUtil, $mmLang, $mmSitesManager) {
+>>>>>>> v3.1.0
     var self = {},
         launcherFileName = 'lti_launcher.html';
 
@@ -182,16 +186,33 @@ angular.module('mm.addons.mod_lti')
     };
 
     /**
+<<<<<<< HEAD
      * Return whether or not the plugin is enabled. Plugin is enabled if the lti WS are available.
+=======
+     * Return whether or not the plugin is enabled in a certain site. Plugin is enabled if the lti WS are available.
+>>>>>>> v3.1.0
      *
      * @module mm.addons.mod_lti
      * @ngdoc method
      * @name $mmaModLti#isPluginEnabled
+<<<<<<< HEAD
      * @return {Boolean} True if plugin is enabled, false otherwise.
      */
     self.isPluginEnabled = function() {
         return  $mmSite.wsAvailable('mod_lti_get_ltis_by_courses') &&
                 $mmSite.wsAvailable('mod_lti_get_tool_launch_data');
+=======
+     * @param  {String} [siteId] Site ID. If not defined, current site.
+     * @return {Promise}         Promise resolved with true if plugin is enabled, rejected or resolved with false otherwise.
+     */
+    self.isPluginEnabled = function(siteId) {
+        siteId = siteId || $mmSite.getId();
+
+        return $mmSitesManager.getSite(siteId).then(function(site) {
+            return  site.wsAvailable('mod_lti_get_ltis_by_courses') &&
+                    site.wsAvailable('mod_lti_get_tool_launch_data');
+        });
+>>>>>>> v3.1.0
     };
 
     /**

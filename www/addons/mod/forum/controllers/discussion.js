@@ -25,7 +25,11 @@ angular.module('mm.addons.mod_forum')
             $ionicScrollDelegate, mmaModForumComponent) {
 
     var discussionid = $stateParams.discussionid,
+<<<<<<< HEAD
         courseid = $stateParams.courseid,
+=======
+        courseid = $stateParams.cid,
+>>>>>>> v3.1.0
         scrollView;
 
     $scope.component = mmaModForumComponent;

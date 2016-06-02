@@ -21,7 +21,11 @@ angular.module('mm.addons.mod_survey')
  * @ngdoc service
  * @name $mmaModSurvey
  */
+<<<<<<< HEAD
 .factory('$mmaModSurvey', function($q, $mmSite, $translate) {
+=======
+.factory('$mmaModSurvey', function($q, $mmSite, $translate, $mmSitesManager) {
+>>>>>>> v3.1.0
     var self = {};
 
     /**
@@ -243,17 +247,35 @@ angular.module('mm.addons.mod_survey')
     };
 
     /**
+<<<<<<< HEAD
      * Return whether or not the plugin is enabled. Plugin is enabled if the survey WS are available.
+=======
+     * Return whether or not the plugin is enabled in a certain site. Plugin is enabled if the survey WS are available.
+>>>>>>> v3.1.0
      *
      * @module mm.addons.mod_survey
      * @ngdoc method
      * @name $mmaModSurvey#isPluginEnabled
+<<<<<<< HEAD
      * @return {Boolean} True if plugin is enabled, false otherwise.
      */
     self.isPluginEnabled = function() {
         return  $mmSite.wsAvailable('mod_survey_get_questions') &&
                 $mmSite.wsAvailable('mod_survey_get_surveys_by_courses') &&
                 $mmSite.wsAvailable('mod_survey_submit_answers');
+=======
+     * @param  {String} [siteId] Site ID. If not defined, current site.
+     * @return {Promise}         Promise resolved with true if plugin is enabled, rejected or resolved with false otherwise.
+     */
+    self.isPluginEnabled = function(siteId) {
+        siteId = siteId || $mmSite.getId();
+
+        return $mmSitesManager.getSite(siteId).then(function(site) {
+            return  site.wsAvailable('mod_survey_get_questions') &&
+                    site.wsAvailable('mod_survey_get_surveys_by_courses') &&
+                    site.wsAvailable('mod_survey_submit_answers');
+        });
+>>>>>>> v3.1.0
     };
 
     /**

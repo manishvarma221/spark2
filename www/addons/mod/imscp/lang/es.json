@@ -1,3 +1,8 @@
 {
+<<<<<<< HEAD
     "deploymenterror": "Error en el paquete de contenidos"
+=======
+    "deploymenterror": "Error en el paquete de contenidos",
+    "showmoduledescription": "Mostrar descripción"
+>>>>>>> v3.1.0
 }

@@ -1,3 +1,8 @@
 {
+<<<<<<< HEAD
     "emptyfilelist": "Det finns inga filer att visa."
+=======
+    "emptyfilelist": "Det finns inga filer att visa",
+    "errorwhilegettingfolder": "Fel vid hämtning av mapp-data"
+>>>>>>> v3.1.0
 }

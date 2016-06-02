@@ -1,3 +1,8 @@
 {
+<<<<<<< HEAD
     "deploymenterror": "Innehållspaket fel!"
+=======
+    "deploymenterror": "Innehållspaket fel!",
+    "showmoduledescription": "Visa beskrivning"
+>>>>>>> v3.1.0
 }

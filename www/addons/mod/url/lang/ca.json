@@ -1,3 +1,8 @@
 {
+<<<<<<< HEAD
     "accessurl": "Vés a la URL"
+=======
+    "accessurl": "Vés a la URL",
+    "pointingtourl": "La URL on apunta aquest recurs"
+>>>>>>> v3.1.0
 }

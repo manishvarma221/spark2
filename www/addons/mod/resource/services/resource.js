@@ -21,8 +21,13 @@ angular.module('mm.addons.mod_resource')
  * @ngdoc service
  * @name $mmaModResource
  */
+<<<<<<< HEAD
 .factory('$mmaModResource', function($mmFilepool, $mmSite, $mmUtil, $mmFS, $http, $log, $q, $sce, $mmApp,
             mmaModResourceComponent) {
+=======
+.factory('$mmaModResource', function($mmFilepool, $mmSite, $mmUtil, $mmFS, $http, $log, $q, $sce, $mmApp, $mmSitesManager,
+            mmaModResourceComponent, mmCoreNotDownloaded, mmCoreDownloading, mmCoreDownloaded) {
+>>>>>>> v3.1.0
     $log = $log.getInstance('$mmaModResource');
 
     var self = {};
@@ -45,7 +50,11 @@ angular.module('mm.addons.mod_resource')
 
         if (self.isDisplayedInIframe(module)) {
             // Get path of the module folder in filepool.
+<<<<<<< HEAD
             promise = $mmFilepool.getFilePathByUrl(siteid, module.url);
+=======
+            promise = $mmFilepool.getPackageDirPathByUrl(siteid, module.url);
+>>>>>>> v3.1.0
         } else {
             promise = $q.when();
         }
@@ -142,6 +151,13 @@ angular.module('mm.addons.mod_resource')
      * @return {Promise}      Promise resolved with the iframe src.
      */
     self.getIframeSrc = function(module) {
+<<<<<<< HEAD
+=======
+        if (!module.contents.length) {
+            return $q.reject();
+        }
+
+>>>>>>> v3.1.0
         var mainFile = module.contents[0],
             mainFilePath = mainFile.filename;
 
@@ -149,7 +165,11 @@ angular.module('mm.addons.mod_resource')
             mainFilePath = mainFile.filepath.substr(1) + mainFilePath;
         }
 
+<<<<<<< HEAD
         return $mmFilepool.getDirectoryUrlByUrl($mmSite.getId(), module.url).then(function(dirPath) {
+=======
+        return $mmFilepool.getPackageDirUrlByUrl($mmSite.getId(), module.url).then(function(dirPath) {
+>>>>>>> v3.1.0
             // This URL is going to be injected in an iframe, we need trustAsResourceUrl to make it work in a browser.
             return $sce.trustAsResourceUrl($mmFS.concatenatePaths(dirPath, mainFilePath));
         }, function() {
@@ -172,10 +192,19 @@ angular.module('mm.addons.mod_resource')
      * @param {Number} moduleId The module ID.
      * @param {String} [target] The HTML file that the user wants to open, if not defined uses the main file.
      * @return {Promise}
+<<<<<<< HEAD
      */
     self.getResourceHtml = function(contents, moduleId, target) {
         var deferred = $q.defer(),
             indexUrl,
+=======
+     *
+     * @deprecated since version 2.10
+     * This function was used to show resources inline
+     */
+    self.getResourceHtml = function(contents, moduleId, target) {
+        var indexUrl,
+>>>>>>> v3.1.0
             paths = {},
             promise;
 
@@ -202,7 +231,15 @@ angular.module('mm.addons.mod_resource')
 
         // Promise handling when we are in a browser.
         promise = (function() {
+<<<<<<< HEAD
             var deferred;
+=======
+            if (!indexUrl) {
+                // If ever that happens.
+                $log.debug('Could not locate the index page');
+                return $q.reject();
+            }
+>>>>>>> v3.1.0
             if ($mmFS.isAvailable()) {
                 // The file system is available.
                 return $mmFilepool.downloadUrl($mmSite.getId(), indexUrl, false, mmaModResourceComponent, moduleId);
@@ -220,6 +257,7 @@ angular.module('mm.addons.mod_resource')
                 } else {
                     // Now that we have the content, we update the SRC to point back to
                     // the external resource. That will be caught by mm-format-text.
+<<<<<<< HEAD
                     var html = angular.element('<div>');
                         html.append(response.data);
 
@@ -244,6 +282,15 @@ angular.module('mm.addons.mod_resource')
                     });
 
                     return html.html();
+=======
+                    return $mmUtil.restoreSourcesInHtml(response.data, paths, function(anchor, href) {
+                        var ext = $mmFS.getFileExtension(href);
+                        if (ext == 'html' || ext == 'html') {
+                            anchor.setAttribute('mma-mod-resource-html-link', 1);
+                            anchor.setAttribute('data-href', href);
+                        }
+                    });
+>>>>>>> v3.1.0
                 }
             });
         });
@@ -272,6 +319,7 @@ angular.module('mm.addons.mod_resource')
      * @return {Boolean}
      */
     self.isDisplayedInIframe = function(module) {
+<<<<<<< HEAD
         var inline = self.isDisplayedInline(module);
 
         if (inline && $mmFS.isAvailable()) {
@@ -284,6 +332,14 @@ angular.module('mm.addons.mod_resource')
         }
 
         return false;
+=======
+        if (!module.contents.length) {
+            return false;
+        }
+        var ext = $mmFS.getFileExtension(module.contents[0].filename);
+
+        return (ext === 'htm' || ext === 'html') && $mmFS.isAvailable();
+>>>>>>> v3.1.0
     };
 
     /**
@@ -294,10 +350,18 @@ angular.module('mm.addons.mod_resource')
      * @name $mmaModResource#isDisplayedInline
      * @param {Object} module The module object.
      * @return {Boolean}
+<<<<<<< HEAD
      */
     self.isDisplayedInline = function(module) {
         var ext = $mmFS.getFileExtension(module.contents[0].filename);
         return ext === 'htm' || ext === 'html';
+=======
+     *
+     * @deprecated since version 2.10
+     */
+    self.isDisplayedInline = function(module) {
+        return self.isDisplayedInIframe(module);
+>>>>>>> v3.1.0
     };
 
     /**
@@ -314,6 +378,26 @@ angular.module('mm.addons.mod_resource')
     };
 
     /**
+<<<<<<< HEAD
+=======
+     * Check if resource plugin is enabled in a certain site.
+     *
+     * @module mm.addons.mod_resource
+     * @ngdoc method
+     * @name $mmaModResource#isPluginEnabled
+     * @param  {String} [siteId] Site ID. If not defined, current site.
+     * @return {Promise}         Promise resolved with true if plugin is enabled, rejected or resolved with false otherwise.
+     */
+    self.isPluginEnabled = function(siteId) {
+        siteId = siteId || $mmSite.getId();
+
+        return $mmSitesManager.getSite(siteId).then(function(site) {
+            return site.canDownloadFiles();
+        });
+    };
+
+    /**
+>>>>>>> v3.1.0
      * Report the resource as being viewed.
      *
      * @module mm.addons.mod_resource
@@ -343,11 +427,26 @@ angular.module('mm.addons.mod_resource')
      * @return {Promise}
      */
     self.openFile = function(contents, moduleId) {
+<<<<<<< HEAD
         var url = contents[0].fileurl,
+=======
+        if (!contents || !contents.length) {
+            return $q.reject();
+        }
+
+        var files = [contents[0]],
+            siteId = $mmSite.getId(),
+            revision = $mmFilepool.getRevisionFromFileList(files),
+            timeMod = $mmFilepool.getTimemodifiedFromFileList(files),
+            component = mmaModResourceComponent,
+            url = contents[0].fileurl,
+            fixedUrl = $mmSite.fixPluginfileURL(url),
+>>>>>>> v3.1.0
             promise;
 
         if ($mmFS.isAvailable()) {
             // The file system is available.
+<<<<<<< HEAD
             promise = $mmFilepool.downloadUrl($mmSite.getId(), url, false, mmaModResourceComponent, moduleId);
         } else {
             // We use the live URL.
@@ -356,6 +455,56 @@ angular.module('mm.addons.mod_resource')
 
         return promise.then(function(localUrl) {
             return $mmUtil.openFile(localUrl);
+=======
+            promise = $mmFilepool.getPackageStatus(siteId, component, moduleId, revision, timeMod).then(function(status) {
+                var isWifi = !$mmApp.isNetworkAccessLimited(),
+                    isOnline = $mmApp.isOnline();
+
+                if (status === mmCoreDownloaded) {
+                    // Get the local file URL.
+                    return $mmFilepool.getUrlByUrl(siteId, url, component, moduleId, timeMod);
+                } else if (status === mmCoreDownloading) {
+                    // Return the online URL.
+                    return fixedUrl;
+                } else {
+                    if (!isOnline && status === mmCoreNotDownloaded) {
+                        // Not downloaded and we're offline, reject.
+                        return $q.reject();
+                    }
+
+                    return $mmFilepool.shouldDownloadBeforeOpen(fixedUrl, contents[0].filesize).then(function() {
+                        // Download and then return the local URL.
+                        return $mmFilepool.downloadPackage(siteId, files, component, moduleId, revision, timeMod).then(function() {
+                            return $mmFilepool.getUrlByUrl(siteId, url, component, moduleId, timeMod);
+                        });
+                    }, function() {
+                        // Start the download if in wifi, but return the URL right away so the file is opened.
+                        if (isWifi && isOnline) {
+                            $mmFilepool.downloadPackage(siteId, files, component, moduleId, revision, timeMod);
+                        }
+
+                        if (status === mmCoreNotDownloaded || isOnline) {
+                            // Not downloaded or outdated and online, return the online URL.
+                            return fixedUrl;
+                        } else {
+                            // Outdated but offline, so we return the local URL.
+                            return $mmFilepool.getUrlByUrl(siteId, url, component, moduleId, timeMod);
+                        }
+                    });
+                }
+            });
+        } else {
+            // We use the live URL.
+            promise = $q.when(fixedUrl);
+        }
+
+        return promise.then(function(url) {
+            if (url.indexOf('http') === 0) {
+                return $mmUtil.openOnlineFile(url);
+            } else {
+                return $mmUtil.openFile(url);
+            }
+>>>>>>> v3.1.0
         });
     };
 
@@ -377,7 +526,11 @@ angular.module('mm.addons.mod_resource')
 
         if (self.isDisplayedInIframe(module)) {
             // Get path of the module folder in filepool.
+<<<<<<< HEAD
             promise = $mmFilepool.getFilePathByUrl(siteid, module.url);
+=======
+            promise = $mmFilepool.getPackageDirPathByUrl(siteid, module.url);
+>>>>>>> v3.1.0
         } else {
             promise = $q.when();
         }

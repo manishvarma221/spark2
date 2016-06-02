@@ -21,7 +21,11 @@ angular.module('mm.addons.mod_choice')
  * @ngdoc service
  * @name $mmaModChoice
  */
+<<<<<<< HEAD
 .factory('$mmaModChoice', function($q, $mmSite, mmaModChoiceResultsAfterAnswer, mmaModChoiceResultsAfterClose,
+=======
+.factory('$mmaModChoice', function($q, $mmSite, $mmSitesManager, mmaModChoiceResultsAfterAnswer, mmaModChoiceResultsAfterClose,
+>>>>>>> v3.1.0
             mmaModChoiceResultsAlways) {
     var self = {};
 
@@ -108,11 +112,16 @@ angular.module('mm.addons.mod_choice')
     };
 
     /**
+<<<<<<< HEAD
      * Return whether or not the plugin is enabled. Plugin is enabled if the choice WS are available.
+=======
+     * Return whether or not the plugin is enabled in a certain site. Plugin is enabled if the choice WS are available.
+>>>>>>> v3.1.0
      *
      * @module mm.addons.mod_choice
      * @ngdoc method
      * @name $mmaModChoice#isPluginEnabled
+<<<<<<< HEAD
      * @return {Boolean} True if plugin is enabled, false otherwise.
      */
     self.isPluginEnabled = function() {
@@ -120,6 +129,20 @@ angular.module('mm.addons.mod_choice')
                 $mmSite.wsAvailable('mod_choice_get_choice_results') &&
                 $mmSite.wsAvailable('mod_choice_get_choices_by_courses') &&
                 $mmSite.wsAvailable('mod_choice_submit_choice_response');
+=======
+     * @param  {String} [siteId] Site ID. If not defined, current site.
+     * @return {Promise}         Promise resolved with true if plugin is enabled, rejected or resolved with false otherwise.
+     */
+    self.isPluginEnabled = function(siteId) {
+        siteId = siteId || $mmSite.getId();
+
+        return $mmSitesManager.getSite(siteId).then(function(site) {
+            return  site.wsAvailable('mod_choice_get_choice_options') &&
+                    site.wsAvailable('mod_choice_get_choice_results') &&
+                    site.wsAvailable('mod_choice_get_choices_by_courses') &&
+                    site.wsAvailable('mod_choice_submit_choice_response');
+        });
+>>>>>>> v3.1.0
     };
 
     /**

@@ -1,11 +1,20 @@
 {
     "beep": "ビープ",
     "currentusers": "現在のユーザ",
+<<<<<<< HEAD
     "enterchat": "チャットルームに入室する",
     "entermessage": "あなたのメッセージを入力してください。",
     "messagebeepsyou": "{{$a}} があなたにビープしました!",
     "messageenter": "{{$a}} が入室しました。",
     "messageexit": "{{$a}} が退室しました。",
+=======
+    "enterchat": "ここをクリックしてチャットルームに入室する",
+    "entermessage": "あなたのメッセージを入力してください。",
+    "errorwhilesendingmessage": "メッセージの送信中にエラーが発生しました。後で再度お試しください。",
+    "messagebeepsyou": "{{$a}} があなたにビープしました!",
+    "messageenter": "このチャットに {{$a}} が入室しました。",
+    "messageexit": "このチャットから {{$a}} が退室しました。",
+>>>>>>> v3.1.0
     "nomessages": "メッセージがありません。",
     "send": "送信",
     "sessionstart": "次のチャットセッションは {{$a}} に開始されます。",

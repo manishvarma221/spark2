@@ -1,9 +1,16 @@
 {
+<<<<<<< HEAD
     "choiceoptions": "Možné odpovědi na anketu",
+=======
+    "cannotsubmit": "Omlouváme se, nastal problém odesláním vaší odpovědi. Zkuste to prosím znovu.",
+    "choiceoptions": "Možné odpovědi na anketu",
+    "errorgetchoice": "Chyba při načítání  dat ankety.",
+>>>>>>> v3.1.0
     "expired": "Je nám líto, tato činnost byla uzavřena {{$a}} a není nadále dostupná",
     "full": "(Obsazeno)",
     "noresultsviewable": "Výsledky nejsou momentálně k dispozici",
     "notopenyet": "Je mi líto, tato činnost není až do {{$a}} dostupná",
+<<<<<<< HEAD
     "numberofuser": "Počet uživatelů",
     "numberofuserinpercentage": "Počet uživatelů v procentech",
     "removemychoice": "Odstranit mou volbu",
@@ -11,5 +18,16 @@
     "responsesresultgraphheader": "Graf",
     "savemychoice": "Uložit mou volbu",
     "userchoosethisoption": "Vybraná volba",
+=======
+    "numberofuser": "Počet odpovědí",
+    "numberofuserinpercentage": "Počet odpovědí v procentech",
+    "previewonly": "Toto je náhled dostupných možností v této anketě. Hlasovat budete moci od {{$a}}.",
+    "removemychoice": "Odstranit mou volbu",
+    "responses": "Odpovědi",
+    "responsesresultgraphdescription": "{{number}}% uživatelů zvolilo možnost: {{text}}.",
+    "responsesresultgraphheader": "Graf",
+    "savemychoice": "Uložit mou volbu",
+    "userchoosethisoption": "Uživatelé, kteří si vybrali tuto alternativu",
+>>>>>>> v3.1.0
     "yourselection": "Vaše volba"
 }

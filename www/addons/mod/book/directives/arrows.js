@@ -36,6 +36,6 @@ angular.module('mm.addons.mod_book')
             next: '=?',
             action: '=?'
         },
-        templateUrl: 'addons/mod_book/templates/arrows.html'
+        templateUrl: 'addons/mod/book/templates/arrows.html'
     };
 });

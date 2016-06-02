@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
     "addanewdiscussion": "Добавить новую тему на форуме",
     "cannotadddiscussion": "Добавление обсуждения в этом форуме требует членства в группе",
     "cannotadddiscussionall": "Вы не имеете права добавить новую тему на форуме для всех участников.",
@@ -7,6 +8,16 @@
     "discussionsubscription": "Обсуждение подписки",
     "erroremptymessage": "Сообщение не может быть пустым",
     "erroremptysubject": "Заголовок сообщения не может быть пустым",
+=======
+    "addanewdiscussion": "Добавить тему для обсуждения",
+    "cannotadddiscussion": "Нужно быть участником группы, чтобы добавлять обсуждения на этот форум.",
+    "cannotadddiscussionall": "У вас нет привилегий для добавления новой темы обсуждения для всех участников.",
+    "cannotcreatediscussion": "Невозможно создать новое обсуждение",
+    "couldnotadd": "Сообщение не добавлено из-за неизвестной ошибки",
+    "discussionsubscription": "Подписаться на эту тему.",
+    "erroremptymessage": "Сообщение не может быть пустым",
+    "erroremptysubject": "Тема сообщения не может быть пустой",
+>>>>>>> v3.1.0
     "errorgetforum": "Ошибка при получении данных форума",
     "errorgetgroups": "Ошибка получения параметров группы",
     "forumnodiscussionsyet": "В этом форуме ещё нет тем для обсуждения",
@@ -14,8 +25,14 @@
     "message": "Сообщение",
     "numdiscussions": "Обсуждений - {{numdiscussions}}",
     "numreplies": "Ответов - {{numreplies}}",
+<<<<<<< HEAD
     "posttoforum": "Написать на форуме",
     "re": "Re:",
     "reply": "Ответ",
+=======
+    "posttoforum": "Отправить в форум",
+    "re": "Re:",
+    "reply": "Ответить",
+>>>>>>> v3.1.0
     "subject": "Тема"
 }

@@ -21,7 +21,11 @@ angular.module('mm.addons.mod_page')
  * @ngdoc service
  * @name $mmaModPage
  */
+<<<<<<< HEAD
 .factory('$mmaModPage', function($mmFilepool, $mmSite, $mmFS, $http, $log, $q, mmaModPageComponent) {
+=======
+.factory('$mmaModPage', function($mmFilepool, $mmSite, $mmFS, $http, $log, $q, $mmSitesManager, $mmUtil, mmaModPageComponent) {
+>>>>>>> v3.1.0
     $log = $log.getInstance('$mmaModPage');
 
     var self = {};
@@ -130,8 +134,12 @@ angular.module('mm.addons.mod_page')
      * @return {Promise}
      */
     self.getPageHtml = function(contents, moduleId) {
+<<<<<<< HEAD
         var deferred = $q.defer(),
             indexUrl,
+=======
+        var indexUrl,
+>>>>>>> v3.1.0
             paths = {},
             promise;
 
@@ -165,9 +173,13 @@ angular.module('mm.addons.mod_page')
                 return $mmFilepool.downloadUrl($mmSite.getId(), indexUrl, false, mmaModPageComponent, moduleId);
             } else {
                 // We return the live URL.
+<<<<<<< HEAD
                 deferred = $q.defer();
                 deferred.resolve($mmSite.fixPluginfileURL(indexUrl));
                 return deferred.promise;
+=======
+                return $q.when($mmSite.fixPluginfileURL(indexUrl));
+>>>>>>> v3.1.0
             }
         })();
 
@@ -178,6 +190,7 @@ angular.module('mm.addons.mod_page')
                     return $q.reject();
                 } else {
                     // Now that we have the content, we update the SRC to point back to
+<<<<<<< HEAD
                     // the external resource. That will be caught by mm-format-text.
                     var html = angular.element('<div>');
                     html.html(response.data);
@@ -195,6 +208,10 @@ angular.module('mm.addons.mod_page')
                         }
                     });
                     return html.html();
+=======
+                    // the external resource. That will b caught by mm-format-text.
+                    return $mmUtil.restoreSourcesInHtml(response.data, paths);
+>>>>>>> v3.1.0
                 }
             });
         });
@@ -246,6 +263,26 @@ angular.module('mm.addons.mod_page')
     };
 
     /**
+<<<<<<< HEAD
+=======
+     * Check if page plugin is enabled in a certain site.
+     *
+     * @module mm.addons.mod_page
+     * @ngdoc method
+     * @name $mmaModPage#isPluginEnabled
+     * @param  {String} [siteId] Site ID. If not defined, current site.
+     * @return {Promise}         Promise resolved with true if plugin is enabled, rejected or resolved with false otherwise.
+     */
+    self.isPluginEnabled = function(siteId) {
+        siteId = siteId || $mmSite.getId();
+
+        return $mmSitesManager.getSite(siteId).then(function(site) {
+            return site.canDownloadFiles();
+        });
+    };
+
+    /**
+>>>>>>> v3.1.0
      * Report a page as being viewed.
      *
      * @module mm.addons.mod_page

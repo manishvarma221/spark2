@@ -1,3 +1,8 @@
 {
+<<<<<<< HEAD
     "emptyfilelist": "No hi ha fitxers per mostrar."
+=======
+    "emptyfilelist": "No hi ha fitxers per mostrar.",
+    "errorwhilegettingfolder": "S'ha produït un error en recuperar les dades de la carpeta."
+>>>>>>> v3.1.0
 }

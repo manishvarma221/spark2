@@ -1,6 +1,16 @@
 {
+<<<<<<< HEAD
     "clicktocontinue": "Klicka här för att fortsätta",
     "ifoundthat": "Jag har funnit att",
     "ipreferthat": "Jag föredrar att",
     "responses": "Svar"
+=======
+    "cannotsubmitsurvey": "Tyvärr fanns det ett problem att skicka din enkät . Var god försök igen.",
+    "clicktocontinue": "Klicka här för att fortsätta",
+    "errorgetsurvey": "Fel vid hämtning av enkätdata",
+    "ifoundthat": "Jag har funnit att",
+    "ipreferthat": "Jag föredrar att",
+    "responses": "Svar",
+    "results": "Resultat"
+>>>>>>> v3.1.0
 }

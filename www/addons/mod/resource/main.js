@@ -29,14 +29,25 @@ angular.module('mm.addons.mod_resource', ['mm.core'])
       views: {
         'site': {
           controller: 'mmaModResourceIndexCtrl',
+<<<<<<< HEAD
           templateUrl: 'addons/mod_resource/templates/index.html'
+=======
+          templateUrl: 'addons/mod/resource/templates/index.html'
+>>>>>>> v3.1.0
         }
       }
     });
 
 })
 
+<<<<<<< HEAD
 .config(function($mmCourseDelegateProvider, $mmCoursePrefetchDelegateProvider) {
     $mmCourseDelegateProvider.registerContentHandler('mmaModResource', 'resource', '$mmaModResourceCourseContentHandler');
     $mmCoursePrefetchDelegateProvider.registerPrefetchHandler('mmaModResource', 'resource', '$mmaModResourcePrefetchHandler');
+=======
+.config(function($mmCourseDelegateProvider, $mmCoursePrefetchDelegateProvider, $mmContentLinksDelegateProvider) {
+    $mmCourseDelegateProvider.registerContentHandler('mmaModResource', 'resource', '$mmaModResourceHandlers.courseContent');
+    $mmCoursePrefetchDelegateProvider.registerPrefetchHandler('mmaModResource', 'resource', '$mmaModResourcePrefetchHandler');
+    $mmContentLinksDelegateProvider.registerLinkHandler('mmaModResource', '$mmaModResourceHandlers.linksHandler');
+>>>>>>> v3.1.0
 });

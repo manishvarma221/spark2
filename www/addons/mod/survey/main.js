@@ -27,13 +27,23 @@ angular.module('mm.addons.mod_survey', [])
         views: {
             'site': {
                 controller: 'mmaModSurveyIndexCtrl',
+<<<<<<< HEAD
                 templateUrl: 'addons/mod_survey/templates/index.html'
+=======
+                templateUrl: 'addons/mod/survey/templates/index.html'
+>>>>>>> v3.1.0
             }
         }
     });
 
 })
 
+<<<<<<< HEAD
 .config(function($mmCourseDelegateProvider) {
     $mmCourseDelegateProvider.registerContentHandler('mmaModSurvey', 'survey', '$mmaModSurveyCourseContentHandler');
+=======
+.config(function($mmCourseDelegateProvider, $mmContentLinksDelegateProvider) {
+    $mmCourseDelegateProvider.registerContentHandler('mmaModSurvey', 'survey', '$mmaModSurveyHandlers.courseContent');
+    $mmContentLinksDelegateProvider.registerLinkHandler('mmaModSurvey', '$mmaModSurveyHandlers.linksHandler');
+>>>>>>> v3.1.0
 });

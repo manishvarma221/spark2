@@ -29,14 +29,17 @@ angular.module('mm.addons.mod_book', ['mm.core'])
       views: {
         'site': {
           controller: 'mmaModBookIndexCtrl',
-          templateUrl: 'addons/mod_book/templates/index.html'
+          templateUrl: 'addons/mod/book/templates/index.html'
         }
       }
     });
 
 })
 
-.config(function($mmCourseDelegateProvider, $mmCoursePrefetchDelegateProvider) {
-    $mmCourseDelegateProvider.registerContentHandler('mmaModBook', 'book', '$mmaModBookCourseContentHandler');
+.config(function($mmCourseDelegateProvider, $mmCoursePrefetchDelegateProvider, $mmContentLinksDelegateProvider) {
+    $mmCourseDelegateProvider.registerContentHandler('mmaModBook', 'book', '$mmaModBookHandlers.courseContentHandler');
     $mmCoursePrefetchDelegateProvider.registerPrefetchHandler('mmaModBook', 'book', '$mmaModBookPrefetchHandler');
+
+    // Register content links handler.
+    $mmContentLinksDelegateProvider.registerLinkHandler('mmaModBook', '$mmaModBookHandlers.linksHandler');
 });

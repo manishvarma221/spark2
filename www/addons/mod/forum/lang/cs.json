@@ -4,6 +4,7 @@
     "cannotadddiscussionall": "Nemáte oprávnění vkládat téma diskuse pro všechny účastníky.",
     "cannotcreatediscussion": "Nelze vytvořit novou diskusi",
     "couldnotadd": "Neznámá chyba! Nemohu přidat váš příspěvek.",
+<<<<<<< HEAD
     "erroremptymessage": "Text příspěvku nemůže být prázdný",
     "erroremptysubject": "Předmět příspěvku nemůže být prázdný",
     "forumnodiscussionsyet": "V tomto diskusním fóru nejsou žádná témata",
@@ -13,4 +14,20 @@
     "re": "Re:",
     "reply": "Odpovědět",
     "subject": "Předmět zprávy"
+=======
+    "discussionsubscription": "Odebírání diskuse",
+    "erroremptymessage": "Text příspěvku nemůže být prázdný",
+    "erroremptysubject": "Předmět příspěvku nemůže být prázdný",
+    "errorgetforum": "Chyba při načítání dat fóra.",
+    "errorgetgroups": "Chyba při načítání nastavení skupiny.",
+    "forumnodiscussionsyet": "V tomto diskusním fóru nejsou žádná témata",
+    "group": "Skupina",
+    "message": "Zpráva",
+    "numdiscussions": "{{numdiscussions}} diskusí",
+    "numreplies": "{{numreplies}} odpovědí",
+    "posttoforum": "Poslat do fóra",
+    "re": "Re:",
+    "reply": "Odpovědět",
+    "subject": "Předmět"
+>>>>>>> v3.1.0
 }

@@ -1,15 +1,29 @@
 {
+<<<<<<< HEAD
+=======
+    "cannotsubmit": "Választásának leadásával gondok vannak. Próbálja meg később.",
+>>>>>>> v3.1.0
     "choiceoptions": "Választási lehetőségek",
     "expired": "Ez a tevékenység {{$a}} időpontban lezárult és már nem érhető el",
     "full": "(Betelt)",
     "noresultsviewable": "Az eredmények jelenleg nem tekinthetők meg.",
     "notopenyet": "Ez a tevékenység {{$a}} időpontig nem elérhető",
+<<<<<<< HEAD
     "numberofuser": "Résztvevők száma",
     "numberofuserinpercentage": "Résztvevők száma százalékban",
+=======
+    "numberofuser": "Válaszok száma",
+    "numberofuserinpercentage": "Válaszok száma százalékban",
+    "previewonly": "Ez a tevékenység lehetőségeinek előnézete. A választását {{$a}} időpontig nem közölheti.",
+>>>>>>> v3.1.0
     "removemychoice": "Válaszlehetőségem törlése",
     "responses": "Tanuló által adott válaszok",
     "responsesresultgraphheader": "Gráfmegjelenítés",
     "savemychoice": "Válaszlehetőségem mentése",
+<<<<<<< HEAD
     "userchoosethisoption": "Felhasználó általi választás",
+=======
+    "userchoosethisoption": "Ezt választó felhasználók",
+>>>>>>> v3.1.0
     "yourselection": "Az Ön választása"
 }

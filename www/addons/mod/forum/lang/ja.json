@@ -1,16 +1,33 @@
 {
+<<<<<<< HEAD
     "addanewdiscussion": "ディスカッショントピックを追加する",
     "cannotadddiscussion": "このフォーラムにディスカッションを追加するにはグループのメンバーである必要があります。",
     "cannotadddiscussionall": "あなたには、すべての参加者に対する新しいディスカッショントピックを追加するパーミッションがありません。",
     "cannotcreatediscussion": "新しいディスカッションを作成できませんでした。",
     "couldnotadd": "エラーのため投稿できませんでした。",
+=======
+    "addanewdiscussion": "新しいディスカッショントピックを追加する",
+    "cannotadddiscussion": "このフォーラムにディスカッションを追加するにはグループのメンバーである必要があります。",
+    "cannotadddiscussionall": "あなたにはすべての参加者のための新しいディスカッショントピックを追加するパーミッションがありません。",
+    "cannotcreatediscussion": "新しいディスカッションを作成できませんでした。",
+    "couldnotadd": "不明なエラーのため、あなたの投稿を追加できませんでした。",
+    "discussionsubscription": "ディスカッション購読",
+>>>>>>> v3.1.0
     "erroremptymessage": "投稿メッセージを空にすることはできません。",
     "erroremptysubject": "件名を空にすることはできません。",
     "forumnodiscussionsyet": "このフォーラムにはまだディスカッショントピックがありません",
     "group": "グループ",
+<<<<<<< HEAD
     "message": "メッセージ本文",
     "posttoforum": "フォーラムに投稿する",
     "re": "Re:",
     "reply": "返信",
     "subject": "メッセージ件名"
+=======
+    "message": "メッセージ",
+    "posttoforum": "フォーラムに投稿する",
+    "re": "Re:",
+    "reply": "返信",
+    "subject": "件名"
+>>>>>>> v3.1.0
 }

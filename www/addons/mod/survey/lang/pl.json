@@ -3,5 +3,10 @@
     "ifoundthat": "Stwierdziłem, że",
     "ipreferthat": "Wolę to",
     "responses": "Odpowiedzi",
+<<<<<<< HEAD
     "results": "Wynik"
+=======
+    "results": "Wynik",
+    "surveycompletednograph": "Już wypełniłeś tą ankietę."
+>>>>>>> v3.1.0
 }

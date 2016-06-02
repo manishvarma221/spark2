@@ -1,13 +1,20 @@
 {
     "beep": "Beep",
+<<<<<<< HEAD
     "currentusers": "Aktuell online",
     "enterchat": "Klicken Sie hier, um den Chat zu betreten",
     "entermessage": "Nachricht eingeben",
+=======
+    "currentusers": "Aktuelle Nutzer/innen",
+    "enterchat": "Chat betreten",
+    "entermessage": "Schreiben Sie Ihre Nachricht.",
+>>>>>>> v3.1.0
     "errorwhileconnecting": "Fehler beim Verbinden zum Chat",
     "errorwhilegettingchatdata": "Fehler beim Lesen der Chatdaten",
     "errorwhilegettingchatusers": "Fehler beim Lesen der Personen im Chat",
     "errorwhileretrievingmessages": "Fehler beim Empfangen der Nachrichten vom Server",
     "errorwhilesendingmessage": "Fehler beim Senden der Nachricht",
+<<<<<<< HEAD
     "messagebeepsyou": "{{$a}} hat Ihnen ein Beep gesendet!",
     "messageenter": "{{$a}} hat den Chat betreten",
     "messageexit": "{{$a}} hat den Chat verlassen",
@@ -15,5 +22,14 @@
     "nomessages": "Keine Nachrichten",
     "send": "Senden",
     "sessionstart": "Der nächste Chat beginnt in {{$a}}",
+=======
+    "messagebeepsyou": "{{$a}} hat Sie angepiepst!",
+    "messageenter": "{{$a}} hat den Chat gerade betreten",
+    "messageexit": "{{$a}} hat den Chat verlassen",
+    "mustbeonlinetosendmessages": "Sie müssen online sein, um Nachrichten zu senden",
+    "nomessages": "Bisher keine Mitteilungen",
+    "send": "Senden",
+    "sessionstart": "Nächster Chat läuft in: {{$a}}",
+>>>>>>> v3.1.0
     "talk": "Sprechen"
 }

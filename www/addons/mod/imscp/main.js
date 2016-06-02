@@ -29,14 +29,25 @@ angular.module('mm.addons.mod_imscp', ['mm.core'])
       views: {
         'site': {
           controller: 'mmaModImscpIndexCtrl',
+<<<<<<< HEAD
           templateUrl: 'addons/mod_imscp/templates/index.html'
+=======
+          templateUrl: 'addons/mod/imscp/templates/index.html'
+>>>>>>> v3.1.0
         }
       }
     });
 
 })
 
+<<<<<<< HEAD
 .config(function($mmCourseDelegateProvider, $mmCoursePrefetchDelegateProvider) {
     $mmCourseDelegateProvider.registerContentHandler('mmaModImscp', 'imscp', '$mmaModImscpCourseContentHandler');
     $mmCoursePrefetchDelegateProvider.registerPrefetchHandler('mmaModImscp', 'imscp', '$mmaModImscpPrefetchHandler');
+=======
+.config(function($mmCourseDelegateProvider, $mmCoursePrefetchDelegateProvider, $mmContentLinksDelegateProvider) {
+    $mmCourseDelegateProvider.registerContentHandler('mmaModImscp', 'imscp', '$mmaModImscpHandlers.courseContent');
+    $mmCoursePrefetchDelegateProvider.registerPrefetchHandler('mmaModImscp', 'imscp', '$mmaModImscpPrefetchHandler');
+    $mmContentLinksDelegateProvider.registerLinkHandler('mmaModImscp', '$mmaModImscpHandlers.linksHandler');
+>>>>>>> v3.1.0
 });

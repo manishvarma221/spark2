@@ -1,3 +1,8 @@
 {
+<<<<<<< HEAD
     "label": "Etiqueta"
+=======
+    "label": "Etiqueta",
+    "taptoview": "Toqueu per veure l'etiqueta."
+>>>>>>> v3.1.0
 }

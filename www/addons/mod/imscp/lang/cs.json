@@ -1,3 +1,8 @@
 {
+<<<<<<< HEAD
     "deploymenterror": "Chyba v balíčku!"
+=======
+    "deploymenterror": "Chyba v balíčku!",
+    "showmoduledescription": "Zobrazit popis"
+>>>>>>> v3.1.0
 }

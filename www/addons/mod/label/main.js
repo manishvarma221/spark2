@@ -24,7 +24,11 @@ angular.module('mm.addons.mod_label', ['mm.core'])
         },
         views: {
             'site': {
+<<<<<<< HEAD
                 templateUrl: 'addons/mod_label/templates/index.html',
+=======
+                templateUrl: 'addons/mod/label/templates/index.html',
+>>>>>>> v3.1.0
                 controller: 'mmaModLabelIndexCtrl'
             }
         }
@@ -32,6 +36,12 @@ angular.module('mm.addons.mod_label', ['mm.core'])
 
 })
 
+<<<<<<< HEAD
 .config(function($mmCourseDelegateProvider) {
     $mmCourseDelegateProvider.registerContentHandler('mmaModLabel', 'label', '$mmaModLabelCourseContentHandler');
+=======
+.config(function($mmCourseDelegateProvider, $mmContentLinksDelegateProvider) {
+    $mmCourseDelegateProvider.registerContentHandler('mmaModLabel', 'label', '$mmaModLabelHandlers.courseContent');
+    $mmContentLinksDelegateProvider.registerLinkHandler('mmaModLabel', '$mmaModLabelHandlers.linksHandler');
+>>>>>>> v3.1.0
 });

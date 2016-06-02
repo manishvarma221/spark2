@@ -2,5 +2,10 @@
     "clicktocontinue": "اضغط هنا للاستمرار",
     "ifoundthat": "وجدت أن",
     "ipreferthat": "أفضل أن",
+<<<<<<< HEAD
     "responses": "إجابات"
+=======
+    "responses": "إجابات",
+    "results": "نتائج"
+>>>>>>> v3.1.0
 }

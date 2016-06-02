@@ -27,7 +27,8 @@ angular.module('mm.addons.mod_book')
 
     var module = $stateParams.module || {},
         courseid = $stateParams.courseid,
-        currentChapter;
+        currentChapter,
+        contentsMap = $mmaModBook.getContentsMap(module.contents);
 
     $scope.title = module.name;
     $scope.description = module.description;
@@ -43,7 +44,7 @@ angular.module('mm.addons.mod_book')
     function loadChapter(chapterId) {
         currentChapter = chapterId;
         $ionicScrollDelegate.scrollTop();
-        return $mmaModBook.getChapterContent(module.contents, chapterId, module.id).then(function(content) {
+        return $mmaModBook.getChapterContent(contentsMap, chapterId, module.id).then(function(content) {
             $scope.content = content;
             $scope.previousChapter = $mmaModBook.getPreviousChapter(chapters, chapterId);
             $scope.nextChapter = $mmaModBook.getNextChapter(chapters, chapterId);
@@ -90,7 +91,7 @@ angular.module('mm.addons.mod_book')
 
     // Menu popover.
     $scope.toc = chapters;
-    $ionicPopover.fromTemplateUrl('addons/mod_book/templates/toc.html', {
+    $ionicPopover.fromTemplateUrl('addons/mod/book/templates/toc.html', {
         scope: $scope,
     }).then(function(popover) {
         $scope.popover = popover;

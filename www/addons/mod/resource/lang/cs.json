@@ -1,1 +1,8 @@
+<<<<<<< HEAD
 []
+=======
+{
+    "errorwhileloadingthecontent": "Chyba při načítání obsahu.",
+    "openthefile": "Otevřít soubor"
+}
+>>>>>>> v3.1.0

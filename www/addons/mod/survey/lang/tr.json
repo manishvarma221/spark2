@@ -2,5 +2,10 @@
     "clicktocontinue": "Devam etmek için buraya tıklayın",
     "ifoundthat": "Gerçekte olan",
     "ipreferthat": "İstediğim",
+<<<<<<< HEAD
     "responses": "Yanıtlar"
+=======
+    "responses": "Yanıtlar",
+    "results": "Sonuçlar"
+>>>>>>> v3.1.0
 }
