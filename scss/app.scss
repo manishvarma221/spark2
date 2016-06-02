@@ -6,10 +6,11 @@
 
 // Colors.
 $positive: #387ef5;
+$light: #fff;
 
 // Setting the default button to button-outline.
-$button-default-bg: transparent;
-$button-default-text: $positive;
+$button-default-bg: $positive;
+$button-default-text: $light;
 $button-default-border: $positive;
 $button-default-active-bg: $positive;
 $button-default-active-border: $positive;
@@ -70,6 +71,6 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 
 //custom icon color
 .icon {
-color: #387EF5 !important;
+color: #387ef5 !important;
 font-size: 16px;
 }
