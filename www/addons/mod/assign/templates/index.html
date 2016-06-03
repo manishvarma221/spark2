@@ -12,6 +12,14 @@
                 <h2>{{ 'mma.mod_assign.allowsubmissionsfromdate' | translate }}</h2>
                 <p>{{ assign.allowsubmissionsfromdate * 1000 | mmFormatDate:"dfmediumdate" }}</p>
             </div>
+            <div ng-if="assign.name" class="item item-text-wrap">  
+                <h2>Course Name</h2>  
+                <p>{{ assign.course_name }}</p>  
+            </div>
+            <div ng-if="assign.grade" class="item item-text-wrap">  
+                <h2>Grade</h2>  
+                <p>{{ assign.grade }}</p>  
+            </div>  
             <div class="item item-text-wrap" ng-if="assign.duedate">
                 <h2>{{ 'mma.mod_assign.duedate' | translate }}</h2>
                 <p ng-if="assign.duedate" >{{ assign.duedate * 1000 | mmFormatDate:"dfmediumdate" }}</p>
