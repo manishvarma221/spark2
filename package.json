@@ -61,7 +61,7 @@
     "cordova-plugin-zip",
     {
       "variables": {
-        "SENDER_ID": "694767596569"
+        "SENDER_ID": "408602687357"
       },
       "locator": "phonegap-plugin-push",
       "id": "phonegap-plugin-push"
