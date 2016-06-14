@@ -5,10 +5,14 @@
   <author href="http://charterresources.us" email="info@charterresources.us">CESR</author>
   <content src="index.html"/>
   <access origin="*"/>
-  <allow-navigation href="cdvfile:*"/>
-  <allow-navigation href="content:*"/>
-  <allow-navigation href="data:*"/>
-  <allow-intent href="*"/>
+
+  <allow-navigation href="cdvfile:*" />
+  <allow-navigation href="content:*" />
+  <allow-navigation href="data:*" />
+  <allow-navigation href="*" />
+
+  <allow-intent href="*" />
+
   <preference name="webviewbounce" value="false"/>
   <preference name="UIWebViewBounce" value="false"/>
   <preference name="DisallowOverscroll" value="true"/>
