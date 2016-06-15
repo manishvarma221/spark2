@@ -317,10 +317,17 @@ angular.module('mm.addons.mod_quiz')
     // Tries to synchronize the current quiz.
     function syncQuiz(checkTime, showErrors) {
         var promise = checkTime ? $mmaModQuizSync.syncQuizIfNeeded(quiz, true) : $mmaModQuizSync.syncQuiz(quiz, true);
-        return promise.then(function(warnings) {
-            var message = $mmText.buildMessage(warnings);
-            if (message) {
-                $mmUtil.showErrorModal(message);
+        return promise.then(function(data) {
+            if (data) {
+                var message = $mmText.buildMessage(data.warnings);
+                if (message) {
+                    $mmUtil.showErrorModal(message);
+                }
+
+                if (data.attemptFinished) {
+                    // An attempt was finished, check completion status.
+                    $mmCourse.checkModuleCompletion(courseId, module.completionstatus);
+                }
             }
         }).catch(function(err) {
             if (showErrors) {
@@ -332,6 +339,9 @@ angular.module('mm.addons.mod_quiz')
 
     // Go to review an attempt that has just been finished.
     function goToAutoReview() {
+        // If we go to auto review it means an attempt was finished. Check completion status.
+        $mmCourse.checkModuleCompletion(courseId, module.completionstatus);
+
         // Verify that user can see the review.
         var attemptId = autoReview.attemptId;
         if (quizAccessInfo.canreviewmyattempts) {
@@ -341,6 +351,7 @@ angular.module('mm.addons.mod_quiz')
                 // Ignore errors.
             });
         }
+
         return $q.when();
     }
 
@@ -502,6 +513,11 @@ angular.module('mm.addons.mod_quiz')
             fetchQuizData().finally(function() {
                 $scope.quizLoaded = true;
             });
+
+            if (data.attemptFinished) {
+                // An attempt was finished, check completion status.
+                $mmCourse.checkModuleCompletion(courseId, module.completionstatus);
+            }
         }
     });
 
