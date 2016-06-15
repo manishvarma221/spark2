@@ -36,8 +36,8 @@ angular.module('mm.core.courses')
      *                           returning an object defining these functions. See {@link $mmUtil#resolveObject}.
      *                             - isEnabled (Boolean|Promise) Whether or not the handler is enabled on a site level.
      *                                                           When using a promise, it should return a boolean.
-     *                             - isEnabledForCourse(courseid) (Boolean|Promise) Whether or not the handler is enabled on a course level.
-     *                                                                              When using a promise, it should return a boolean.
+     *                             - isEnabledForCourse(courseid, accessData) (Boolean|Promise) Whether or not the handler is
+     *                                               enabled on a course level. When using a promise, it should return a boolean.
      *                             - getController(courseid) (Object) Returns the object that will act as controller.
      *                                                                See core/components/courses/templates/list.html
      *                                                                for the list of scope variables expected.
@@ -57,11 +57,13 @@ angular.module('mm.core.courses')
         return true;
     };
 
-    self.$get = function($mmUtil, $q, $log, $mmSite) {
+    self.$get = function($mmUtil, $q, $log, $mmSite, mmCoursesAccessMethods) {
         var enabledNavHandlers = {},
             coursesHandlers = {},
             self = {},
-            loaded = {};
+            loaded = {},
+            lastUpdateHandlersStart,
+            lastUpdateHandlersForCoursesStart = {};
 
         $log = $log.getInstance('$mmCoursesDelegate');
 
@@ -92,7 +94,26 @@ angular.module('mm.core.courses')
         };
 
         /**
-         * Get the handlers for a course.
+         * Get the handler for a course using a certain access type.
+         *
+         * @param {Number} courseId    The course ID.
+         * @param {Boolean} refresh    True if it should refresh the list.
+         * @param  {Object} accessData Access type and data. Default, guest, ...
+         * @return {Array}             Array of objects containing 'priority' and 'controller'.
+         */
+        function getNavHandlersForAccess(courseId, refresh, accessData) {
+            if (refresh || !coursesHandlers[courseId] || coursesHandlers[courseId].access.type != accessData.type) {
+                coursesHandlers[courseId] = {
+                    access: accessData,
+                    handlers: []
+                };
+                self.updateNavHandlersForCourse(courseId, accessData);
+            }
+            return coursesHandlers[courseId].handlers;
+        }
+
+        /**
+         * Get the handlers for a course where the user is enrolled in.
          *
          * @module mm.core.courses
          * @ngdoc method
@@ -102,11 +123,64 @@ angular.module('mm.core.courses')
          * @return {Array}          Array of objects containing 'priority' and 'controller'.
          */
         self.getNavHandlersFor = function(courseId, refresh) {
-            if (typeof(coursesHandlers[courseId]) == 'undefined' || refresh) {
-                coursesHandlers[courseId] = [];
-                self.updateNavHandlersForCourse(courseId);
+            // Default access.
+            var accessData = {
+                type: mmCoursesAccessMethods.default
+            };
+            return getNavHandlersForAccess(courseId, refresh, accessData);
+        };
+
+        /**
+         * Get the handlers for a course as guest.
+         *
+         * @module mm.core.courses
+         * @ngdoc method
+         * @name $mmCoursesDelegate#getNavHandlersForGuest
+         * @param {Number} courseId The course ID.
+         * @param {Boolean} refresh True if it should refresh the list.
+         * @return {Array}          Array of objects containing 'priority' and 'controller'.
+         */
+        self.getNavHandlersForGuest = function(courseId, refresh) {
+            // Guest access.
+            var accessData = {
+                type: mmCoursesAccessMethods.guest
+            };
+            return getNavHandlersForAccess(courseId, refresh, accessData);
+        };
+
+        /**
+         * Check if a time belongs to the last update handlers call.
+         * This is to handle the cases where updateNavHandlers don't finish in the same order as they're called.
+         *
+         * @module mm.core.courses
+         * @ngdoc method
+         * @name $mmCoursesDelegate#isLastUpdateCall
+         * @param  {Number}  time Time to check.
+         * @return {Boolean}      True if equal, false otherwise.
+         */
+        self.isLastUpdateCall = function(time) {
+            if (!lastUpdateHandlersStart) {
+                return true;
             }
-            return coursesHandlers[courseId];
+            return time == lastUpdateHandlersStart;
+        };
+
+        /**
+         * Check if a time belongs to the last update handlers for course call.
+         * This is to handle the cases where updateNavHandlersForCourse don't finish in the same order as they're called.
+         *
+         * @module mm.core.courses
+         * @ngdoc method
+         * @name $mmCoursesDelegate#isLastUpdateCourseCall
+         * @param  {Number} courseId Course ID.
+         * @param  {Number} time     Time to check.
+         * @return {Boolean}         True if equal, false otherwise.
+         */
+        self.isLastUpdateCourseCall = function(courseId, time) {
+            if (!lastUpdateHandlersForCoursesStart[courseId]) {
+                return true;
+            }
+            return time == lastUpdateHandlersForCoursesStart[courseId];
         };
 
         /**
@@ -117,11 +191,13 @@ angular.module('mm.core.courses')
          * @name $mmCoursesDelegate#updateNavHandler
          * @param {String} addon The addon.
          * @param {Object} handlerInfo The handler details.
+         * @param  {Number} time Time this update process started.
          * @return {Promise} Resolved when enabled, rejected when not.
          * @protected
          */
-        self.updateNavHandler = function(addon, handlerInfo) {
-            var promise;
+        self.updateNavHandler = function(addon, handlerInfo, time) {
+            var promise,
+                siteId = $mmSite.getId();
 
             if (typeof handlerInfo.instance === 'undefined') {
                 handlerInfo.instance = $mmUtil.resolveObject(handlerInfo.handler, true);
@@ -134,17 +210,21 @@ angular.module('mm.core.courses')
             }
 
             // Checks if the content is enabled.
-            return promise.then(function(enabled) {
-                if (enabled) {
-                    enabledNavHandlers[addon] = {
-                        instance: handlerInfo.instance,
-                        priority: handlerInfo.priority
-                    };
-                } else {
-                    return $q.reject();
+            return promise.catch(function() {
+                return false;
+            }).then(function(enabled) {
+                // Verify that this call is the last one that was started.
+                // Check that site hasn't changed since the check started.
+                if (self.isLastUpdateCall(time) && $mmSite.isLoggedIn() && $mmSite.getId() === siteId) {
+                    if (enabled) {
+                        enabledNavHandlers[addon] = {
+                            instance: handlerInfo.instance,
+                            priority: handlerInfo.priority
+                        };
+                    } else {
+                        delete enabledNavHandlers[addon];
+                    }
                 }
-            }).catch(function() {
-                delete enabledNavHandlers[addon];
             });
         };
 
@@ -158,13 +238,17 @@ angular.module('mm.core.courses')
          * @protected
          */
         self.updateNavHandlers = function() {
-            var promises = [];
+            var promises = [],
+                siteId = $mmSite.getId(),
+                now = new Date().getTime();
 
             $log.debug('Updating navigation handlers for current site.');
 
+            lastUpdateHandlersStart = now;
+
             // Loop over all the content handlers.
             angular.forEach(navHandlers, function(handlerInfo, addon) {
-                promises.push(self.updateNavHandler(addon, handlerInfo));
+                promises.push(self.updateNavHandler(addon, handlerInfo, now));
             });
 
             return $q.all(promises).then(function() {
@@ -173,10 +257,14 @@ angular.module('mm.core.courses')
                 // Never reject.
                 return true;
             }).finally(function() {
-                // Update handlers for all courses.
-                angular.forEach(coursesHandlers, function(handler, courseId) {
-                    self.updateNavHandlersForCourse(parseInt(courseId));
-                });
+                // Verify that this call is the last one that was started.
+                // Check that site hasn't changed since the check started.
+                if (self.isLastUpdateCall(now) && $mmSite.isLoggedIn() && $mmSite.getId() === siteId) {
+                    // Update handlers for all courses.
+                    angular.forEach(coursesHandlers, function(handler, courseId) {
+                        self.updateNavHandlersForCourse(parseInt(courseId), handler.access);
+                    });
+                }
             });
         };
 
@@ -186,17 +274,22 @@ angular.module('mm.core.courses')
          * @module mm.core.courses
          * @ngdoc method
          * @name $mmCoursesDelegate#updateNavHandlersForCourse
-         * @param {Number} courseId The course ID.
-         * @return {Promise}        Resolved when updated.
+         * @param {Number} courseId    The course ID.
+         * @param  {Object} accessData Access type and data. Default, guest, ...
+         * @return {Promise}           Resolved when updated.
          * @protected
          */
-        self.updateNavHandlersForCourse = function(courseId) {
+        self.updateNavHandlersForCourse = function(courseId, accessData) {
             var promises = [],
-                enabledForCourse = [];
+                enabledForCourse = [],
+                siteId = $mmSite.getId(),
+                now = new Date().getTime();
+
+            lastUpdateHandlersForCoursesStart[courseId] = now;
 
             angular.forEach(enabledNavHandlers, function(handler) {
                 // Checks if the handler is enabled for the user.
-                var promise = $q.when(handler.instance.isEnabledForCourse(courseId)).then(function(enabled) {
+                var promise = $q.when(handler.instance.isEnabledForCourse(courseId, accessData)).then(function(enabled) {
                     if (enabled) {
                         enabledForCourse.push(handler);
                     } else {
@@ -214,21 +307,24 @@ angular.module('mm.core.courses')
                 // Never fails.
                 return true;
             }).finally(function() {
-                // Update the coursesHandlers array with the new enabled addons.
-                $mmUtil.emptyArray(coursesHandlers[courseId]);
-                angular.forEach(enabledForCourse, function(handler) {
-                    coursesHandlers[courseId].push({
-                        controller: handler.instance.getController(courseId),
-                        priority: handler.priority
+                // Verify that this call is the last one that was started.
+                // Check that site hasn't changed since the check started.
+                if (self.isLastUpdateCourseCall(courseId, now) && $mmSite.isLoggedIn() && $mmSite.getId() === siteId) {
+                    // Update the coursesHandlers array with the new enabled addons.
+                    $mmUtil.emptyArray(coursesHandlers[courseId].handlers);
+                    angular.forEach(enabledForCourse, function(handler) {
+                        coursesHandlers[courseId].handlers.push({
+                            controller: handler.instance.getController(courseId),
+                            priority: handler.priority
+                        });
                     });
-                });
-                loaded[courseId] = true;
+                    loaded[courseId] = true;
+                }
             });
         };
 
         return self;
     };
-
 
     return self;
 });

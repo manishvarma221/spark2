@@ -1,0 +1,55 @@
+<ion-view view-title="{{ 'mma.academicsummary.academicsummary' | translate }}">
+    <ion-content padding="true">
+        <ion-refresher pulling-text="{{ 'mm.core.pulltorefresh' | translate }}" ng-if="academicsummaryLoaded" on-refresh="refreshAcademicsummary()">
+        </ion-refresher>
+        <mm-loading hide-until="academicsummaryLoaded">
+         <!-- <div class="">{{academicsummary.summary}}
+         </div> -->
+        
+         <!-- {{summaryHTML}} -->
+         <article></article>
+         <div class="academic_summary" ng-repeat="academicsummary_detail in academicsummary track by $index">
+         <table>
+            <tr>
+                <td></td>
+                 
+                <td ng-if='academicsummary_detail.summary_head[0]'>
+                {{academicsummary_detail.summary_head[0]}}</td>
+                <td ng-if='academicsummary_detail.summary_head[1]'>{{academicsummary_detail.summary_head[1]}}</td>
+                <td ng-if='academicsummary_detail.summary_head[2]'>{{academicsummary_detail.summary_head[2]}}</td>
+                <td ng-if='academicsummary_detail.summary_head[3]'>{{academicsummary_detail.summary_head[3]}}</td>
+                <td ng-if='academicsummary_detail.summary_head[4]'>{{academicsummary_detail.summary_head[4]}}</td>
+                <td ng-if='academicsummary_detail.summary_head[5]'>{{academicsummary_detail.summary_head[5]}}
+                </td>
+
+            </tr>
+            <tr ng-repeat="academicsummary_course in academicsummary_detail.courseData">
+                <td><a ng-click="action($event, academicsummary_course.courseD)" href="#">{{academicsummary_course.course}}</a></td>
+                <td ng-if="academicsummary_course.data[0]"><a ng-click="actionGrade($event, academicsummary_course.courseD)" href="#">{{academicsummary_course.data[0]}}</a></td>
+                <td ng-if="academicsummary_course.data[1]"><a ng-click="actionGrade($event, academicsummary_course.courseD)" href="#">{{academicsummary_course.data[1]}}</a></td>
+                <td ng-if="academicsummary_course.data[2]"><a ng-click="actionGrade($event, academicsummary_course.courseD)" href="#">{{academicsummary_course.data[2]}}</a></td>
+                <td ng-if="academicsummary_course.data[3]"><a ng-click="actionGrade($event, academicsummary_course.courseD)" href="#">{{academicsummary_course.data[3]}}</a></td>
+                <td ng-if="academicsummary_course.data[4]"><a ng-click="actionGrade($event, academicsummary_course.courseD)" href="#">{{academicsummary_course.data[4]}}</a></td>
+
+                 <td ng-if="academicsummary_course.data[5]"></td>
+
+                
+            </tr>
+            
+         </table>
+            
+         </div>
+         </mm-loading>
+         
+
+            <ion-infinite-scroll ng-if="canLoadMore"
+                    immediate-check="false"
+                    on-infinite="loadMoreAcademicsummary()" >
+            </ion-infinite-scroll>
+
+            <div class="padding" ng-if="!academicsummary || academicsummary.length <= 0">
+                <p>{{ 'mma.academicsummary.therearenoasummaryyet' | translate}}</p
+            </div>
+        </mm-loading>
+    </ion-content>
+</ion-view>

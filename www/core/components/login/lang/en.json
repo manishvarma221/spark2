@@ -2,7 +2,7 @@
     "authenticating": "Authenticating",
     "cancel": "Cancel",
     "credentials": "Credentials",
-    "credentialsdescription": "Please provide your username and password to login on ",
+    "credentialsdescription": "Please provide your username and password to login on",
     "confirmdeletesite": "Are you sure you want to delete the site {{sitename}}?",
     "connect": "Connect!",
     "connecttomoodle": "Connect to SPARK",
@@ -29,7 +29,7 @@
     "siteaddress": "Site address",
     "siteinmaintenance": "Your site is in maintenance mode",
     "siteurl": "Site URL",
-    "siteurlrequired": "Site URL required, i.e <i>http://www.yourmoodlesite.abc or https://www.yourmoodlesite.efg</i>",
+    "siteurlrequired": "Site URL required, i.e <i>http://connect.yourschoolsite.org or https://www.connect.yourschoolsite.org</i>",
     "username": "Username",
     "usernamerequired": "Username required",
     "webservicesnotenabled": "Web Services are not enabled in your site. Please, contact your SPARK site administrator if you think mobile access should be enabled."

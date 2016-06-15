@@ -1,6 +1,7 @@
 {
     "appsettings": "App settings",
     "help": "Help",
+    "changesite": "Change/Add site or user",
     "logout": "Change/Add site or user",
     "mycourses": "My courses",
     "togglemenu": "Toggle menu",
