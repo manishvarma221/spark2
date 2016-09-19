@@ -47,8 +47,8 @@ angular.module('mm.addons.commendation', ['mm.core'])
             if ($mmUtil.isTrueOrOne(commendation.notif)) {
                 $mmaCommendation.isPluginEnabledForSite(commendation.site).then(function() {
                     $mmaCommendation.invalidateCommendationList().finally(function() {
-                        $state.go('redirect', {siteid: commendation.site, state: 'site.academicsummary'});
-                        $state.go('redirect', {siteid: commendation.site, state: 'site.academicsummary'});                    });
+                        $state.go('redirect', {siteid: commendation.site, state: 'site.commendation'});
+                    });
                 });
                 return true;
             }
