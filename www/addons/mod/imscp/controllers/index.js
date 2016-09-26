@@ -22,7 +22,7 @@ angular.module('mm.addons.mod_imscp')
  * @name mmaModImscpIndexCtrl
  */
 .controller('mmaModImscpIndexCtrl', function($scope, $stateParams, $mmUtil, $mmaModImscp, $log, mmaModImscpComponent,
-            $ionicPopover, $timeout, $q, $mmCourse, $mmApp) {
+            $ionicPopover, $timeout, $q, $mmCourse, $mmApp, $mmText, $translate, $timeout) {
     $log = $log.getInstance('mmaModImscpIndexCtrl');
 
     var module = $stateParams.module || {},
@@ -35,6 +35,7 @@ angular.module('mm.addons.mod_imscp')
     $scope.componentId = module.id;
     $scope.externalUrl = module.url;
     $scope.loaded = false;
+    $scope.refreshIcon = 'spinner';
 
     // Initialize empty previous/next to prevent showing arrows for an instant before they're hidden.
     $scope.previousItem = '';
@@ -80,6 +81,7 @@ angular.module('mm.addons.mod_imscp')
                     return $q.reject();
                 }).finally(function() {
                     $scope.loaded = true;
+                    $scope.refreshIcon = 'ion-refresh';
                 });
             });
         } else {
@@ -89,14 +91,22 @@ angular.module('mm.addons.mod_imscp')
     }
 
     $scope.doRefresh = function() {
-        $mmaModImscp.invalidateContent(module.id).then(function() {
-            return fetchContent();
-        }).finally(function() {
-            $scope.$broadcast('scroll.refreshComplete');
-        });
+        if ($scope.loaded) {
+            $scope.refreshIcon = 'spinner';
+            $mmaModImscp.invalidateContent(module.id).then(function() {
+                return fetchContent();
+            }).finally(function() {
+                $scope.$broadcast('scroll.refreshComplete');
+            });
+        }
     };
 
     $scope.loadItem = function(itemId) {
+        if (!itemId) {
+            // Not valid, probably a category.
+            return;
+        }
+
         $scope.popover.hide();
         loadItem(itemId);
     };
@@ -105,10 +115,17 @@ angular.module('mm.addons.mod_imscp')
         return new Array(n);
     };
 
-    $ionicPopover.fromTemplateUrl('addons/mod/imscp/templates/toc.html', {
-        scope: $scope,
-    }).then(function(popover) {
-        $scope.popover = popover;
+    // Context Menu Description action.
+    $scope.expandDescription = function() {
+        $mmText.expandText($translate.instant('mm.core.description'), $scope.description);
+    };
+
+    $timeout(function() {
+        $ionicPopover.fromTemplateUrl('addons/mod/imscp/templates/toc.html', {
+            scope: $scope
+        }).then(function(popover) {
+            $scope.popover = popover;
+        });
     });
 
     fetchContent().then(function() {

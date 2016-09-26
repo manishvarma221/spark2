@@ -24,7 +24,9 @@
 
             </tr>
             <tr ng-repeat="academicsummary_course in academicsummary_detail.courseData">
-                <td><a ng-click="action($event, academicsummary_course.courseD)" href="#">{{academicsummary_course.course}}</a></td>
+                <!--course link deleted from below, original this is the original one-->
+                <!--  <td><a ng-click="action($event, academicsummary_course.courseD)" href="#">{{academicsummary_course.course}}</a></td>  -->
+                <td><a href="#">{{academicsummary_course.course}}</a></td>
                 <td ng-if="academicsummary_course.data[0]"><a ng-click="actionGrade($event, academicsummary_course.courseD)" href="#">{{academicsummary_course.data[0]}}</a></td>
                 <td ng-if="academicsummary_course.data[1]"><a ng-click="actionGrade($event, academicsummary_course.courseD)" href="#">{{academicsummary_course.data[1]}}</a></td>
                 <td ng-if="academicsummary_course.data[2]"><a ng-click="actionGrade($event, academicsummary_course.courseD)" href="#">{{academicsummary_course.data[2]}}</a></td>

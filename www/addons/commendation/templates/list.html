@@ -22,8 +22,8 @@
             </tr>
             <tr ng-repeat="commendation_row in commendation_detail.table_row">
                 <td align="left">{{commendation_row.index}}</td>
-                <td align="left">{{commendation_row.date}}</td>
-                <td align="left">{{commendation_row.location_name}}</td>
+                <td align="left">{{commendation_row.conduct_date}}</td>
+                <td align="left">{{commendation_row.location}}</td>
                 <td align="left">{{commendation_row.comment}}</td>                 
                 <td align="left">{{commendation_row.teachername}}</td>
 
@@ -32,35 +32,6 @@
                 <td align="center" colspan="4">You don't have any commendations.</td> 
             </tr>  
          </table> 
-
-          
-         <div>
-         
-         <!-- <table ng-repeat="commendation_row in commendation_detail.table_row">
-                
-                <tr>
-                <td align="left" colspan="2">S.No.{{commendation_row.index}}</td>
-                </tr><tr>
-                <td>Date : </td> <td>{{commendation_row.date}}</td>
-                </tr><tr>
-                <td>Violation : </td><td>{{commendation_row.violation_type}}</td>
-                </tr><tr>
-                <td>Disruption : </td><td>{{commendation_row.disruption_type}}</td>
-                </tr><tr>
-                <td>Comment : </td><td>{{commendation_row.comment}}</td>
-                </tr><tr>
-                <td>Referred by : </td><td>{{commendation_row.teachername}}</td>
-
-
-            </tr>
-
-         </table> -->
-
-
-         </div>
-         
-
-            
          </div>
          </mm-loading>
       
